@@ -1,0 +1,2 @@
+﻿1. Fix print format qty, available for 3 character
+2. Improve Aplication Performance

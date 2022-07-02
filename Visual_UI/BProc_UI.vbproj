@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{DE51AE37-1706-43AC-8A80-CAD9ABFDA4B2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>BProc_UI</RootNamespace>
+    <AssemblyName>BProc_UI</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>BProc_UI.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>BProc_UI.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.2.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Release\Framework\2.1.0.2\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="SEMICO_Dialog, Version=2.1.0.3, Culture=neutral, PublicKeyToken=bfd120d5d6145ba4, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Release\Framework\2.1.0.5\SEMICO_Dialog.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Telerik.WinControls, Version=2011.3.11.1116, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.GridView, Version=2011.3.11.1116, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.RadDock, Version=2011.3.11.1116, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.UI, Version=2011.3.11.1116, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2011.3.11.1116, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Master\Form_Setting\Form_Setting.Owner.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\Form_Setting\Form_Setting.Unit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\Form_Setting\Frm_Setting.category.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\Frm_Item.Designer.vb">
+      <DependentUpon>Frm_Item.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Frm_Item.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\Frm_Supplier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\UI Telerik1.Designer.vb">
+      <DependentUpon>Frm_Supplier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Frm_Cashier.Designer.vb">
+      <DependentUpon>Frm_Cashier.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Frm_Cashier.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\Frm_Customer.Designer.vb">
+      <DependentUpon>Frm_Customer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Frm_Customer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Master\Form_Setting\Frm_Setting.Designer.vb">
+      <DependentUpon>Frm_Setting.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Master\Form_Setting\Frm_Setting.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Transaction\Frm_InputItem.Designer.vb">
+      <DependentUpon>Frm_InputItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Frm_InputItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction\Frm_PaymentAndPrint.Designer.vb">
+      <DependentUpon>Frm_PaymentAndPrint.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction\Frm_PaymentAndPrint.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Master\Frm_Item.resx">
+      <DependentUpon>Frm_Item.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\Frm_Supplier.resx">
+      <DependentUpon>Frm_Supplier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\Frm_Cashier.resx">
+      <DependentUpon>Frm_Cashier.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\Frm_Customer.resx">
+      <DependentUpon>Frm_Customer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Master\Form_Setting\Frm_Setting.resx">
+      <DependentUpon>Frm_Setting.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\Frm_InputItem.resx">
+      <DependentUpon>Frm_InputItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction\Frm_PaymentAndPrint.resx">
+      <DependentUpon>Frm_PaymentAndPrint.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Repository\BPRoc_LIB.vbproj">
+      <Project>{D0302C69-0D54-43E5-86F4-FD3E45AB9C30}</Project>
+      <Name>BPRoc_LIB</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\searchall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\window-new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disks.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\print.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\document-new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Gimme Dat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empty-shopping-cart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\basket_add %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\basket_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\return2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\File_add32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cashbox %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cashbox %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cashbox.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Document Copy-01.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

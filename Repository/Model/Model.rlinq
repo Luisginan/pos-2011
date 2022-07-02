@@ -1,0 +1,1127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DomainModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="2.0.0.0" name="POSModel" namespace="EntitiesModel" showPropertiesCompartment="true" xmlns="http://www.telerik.com/ORM">
+  <orm:orm name="POSModel" backend="mssql" xmlns:orm="http://tempuri.org/ORM">
+    <orm:namespace name="EntitiesModel" default="true" root-namespace="BPRoc_LIB">
+      <orm:class name="T_User" behavior="readwrite" uniqueId="716fc48e-f967-4846-a518-fc5064944df8">
+        <orm:table name="T_User" />
+        <orm:identity>
+          <orm:single-field field-name="_userName" />
+        </orm:identity>
+        <orm:field name="_userName" property="UserName" behavior="readwrite" uniqueId="d4e24436-bb5f-4f06-81e1-164a2038745d" type="System.String">
+          <orm:column name="UserName" sql-type="varchar" nullable="false" length="50" scale="0" primary-key="true" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_levelUser" property="LevelUser" behavior="readwrite" uniqueId="7e4e7461-8f9c-4888-9ecb-ece74abc624f" type="System.String">
+          <orm:column name="LevelUser" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_passwordUser" property="PasswordUser" behavior="readwrite" uniqueId="e3355926-2fde-4f7d-a5be-b5e4c22e1236" type="System.String">
+          <orm:column name="PasswordUser" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_tglInput" property="TglInput" behavior="readwrite" uniqueId="969b89a9-b321-452a-a5f7-1b59dda87051" type="System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="TglInput" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        </orm:field>
+        <orm:field name="_tglUpdate" property="TglUpdate" behavior="readwrite" uniqueId="0e6397c7-5781-4199-94bd-d157e5004090" type="System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="TglUpdate" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        </orm:field>
+        <orm:field name="_formName" property="FormName" behavior="readwrite" uniqueId="0ea9964f-5b6e-4f9f-b403-423bb36e6988" type="System.String">
+          <orm:column name="FormName" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_isStatus" property="IsStatus" behavior="readwrite" uniqueId="ede14788-b919-4bd9-8a91-c64faca4c0c4" type="System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="IsStatus" sql-type="bit" nullable="true" length="0" scale="0" ado-type="Bit" />
+        </orm:field>
+        <orm:field name="_userInput" property="UserInput" behavior="readwrite" uniqueId="88420135-fe78-4bf1-80d1-8f695bd7026d" type="System.String">
+          <orm:column name="UserInput" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="T_Owner" behavior="readwrite" uniqueId="9a77ea60-1066-497a-9043-6890ceabc8ae">
+        <orm:table name="T_Owner" />
+        <orm:identity>
+          <orm:single-field field-name="_nama" />
+        </orm:identity>
+        <orm:field name="_nama" property="Nama" behavior="readwrite" uniqueId="2996586c-7fc0-4226-9592-0f319d589c44" type="System.String">
+          <orm:column name="Nama" sql-type="varchar" nullable="false" length="50" scale="0" primary-key="true" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_alamat" property="Alamat" behavior="readwrite" uniqueId="30af2f3d-afe2-4e45-b696-d6418d378473" type="System.String">
+          <orm:column name="Alamat" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_telepon" property="Telepon" behavior="readwrite" uniqueId="ac808bd9-54d6-40e1-b3c1-0971ceba49a2" type="System.String">
+          <orm:column name="Telepon" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_mobile" property="Mobile" behavior="readwrite" uniqueId="c16b4568-b4c1-4a35-9102-68a38d630a1b" type="System.String">
+          <orm:column name="Mobile" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_fax" property="Fax" behavior="readwrite" uniqueId="aad593b2-b0f8-4c13-a53d-2e64cfe588e0" type="System.String">
+          <orm:column name="Fax" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_eMail" property="EMail" behavior="readwrite" uniqueId="529a3276-b1ed-472f-8351-733f2f1dd7ae" type="System.String">
+          <orm:column name="EMail" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_noRegister" property="NoRegister" behavior="readwrite" uniqueId="71565375-6f50-429c-827c-70c59b736e8b" type="System.String">
+          <orm:column name="NoRegister" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_userName" property="UserName" behavior="readwrite" uniqueId="3df8acb7-fe59-4a4e-8589-c46a18d6b94f" type="System.String">
+          <orm:column name="UserName" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_tglInput" property="TglInput" behavior="readwrite" uniqueId="58c606c1-b197-4521-84fc-32deb5cec67c" type="System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="TglInput" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        </orm:field>
+        <orm:field name="_tglUpdate" property="TglUpdate" behavior="readwrite" uniqueId="d2a832b7-d905-4512-87ae-5efd9bb8b211" type="System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="TglUpdate" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        </orm:field>
+        <orm:field name="_isStatus" property="IsStatus" behavior="readwrite" uniqueId="ac588e87-8684-4f64-988b-a9c7e6c738cf" type="System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="IsStatus" sql-type="bit" nullable="true" length="0" scale="0" ado-type="Bit" />
+        </orm:field>
+        <orm:field name="_namaToko" property="NamaToko" behavior="readwrite" uniqueId="beb33f68-2873-4158-82b9-0dee8504f5f9" type="System.String">
+          <orm:column name="NamaToko" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="Supplier" behavior="readwrite" uniqueId="7ac6c710-ff61-4f29-8ef8-f3e945924272">
+        <orm:table name="Supplier" />
+        <orm:identity>
+          <orm:single-field field-name="_kdSupplier" />
+        </orm:identity>
+        <orm:field name="_kdSupplier" property="KdSupplier" behavior="readwrite" uniqueId="de4d0b17-2a25-4db4-9998-0069850fc09e" type="System.String">
+          <orm:column name="KdSupplier" sql-type="varchar" nullable="false" length="50" scale="0" primary-key="true" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_nmSup" property="NmSup" behavior="readwrite" uniqueId="4fe0be34-b968-443a-8223-f0c124ec6731" type="System.String">
+          <orm:column name="NmSup" sql-type="varchar(max)" nullable="true" length="0" scale="0" ado-type="LongVarchar" />
+        </orm:field>
+        <orm:field name="_almtSup" property="AlmtSup" behavior="readwrite" uniqueId="628d4f72-9af0-41b7-bb15-0a887053ddbb" type="System.String">
+          <orm:column name="AlmtSup" sql-type="text" nullable="true" length="0" scale="0" ado-type="LongVarchar" />
+        </orm:field>
+        <orm:field name="_kota" property="Kota" behavior="readwrite" uniqueId="6407326f-18e7-4673-9acf-556ca7ff1761" type="System.String">
+          <orm:column name="Kota" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_tlpSup" property="TlpSup" behavior="readwrite" uniqueId="e4774ba7-3a2e-470d-9104-6fa2c2c300dc" type="System.String">
+          <orm:column name="TlpSup" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_faxSup" property="FaxSup" behavior="readwrite" uniqueId="fc6bb9ab-1777-4e04-9e85-4e108e93b615" type="System.String">
+          <orm:column name="FaxSup" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_hpSup" property="HpSup" behavior="readwrite" uniqueId="b10e33ab-8093-40a5-ad94-0d071f7481a7" type="System.String">
+          <orm:column name="HpSup" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_isStatus" property="IsStatus" behavior="readwrite" uniqueId="23559677-089f-4635-a4bf-78a1bf290006" type="System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="IsStatus" sql-type="bit" nullable="true" length="0" scale="0" ado-type="Bit" />
+        </orm:field>
+        <orm:field name="_userName" property="UserName" behavior="readwrite" uniqueId="003e9db3-d82a-49a0-b8af-1e35179c90bc" type="System.String">
+          <orm:column name="UserName" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_tglInput" property="TglInput" behavior="readwrite" uniqueId="371300fa-d53e-416e-a032-bb86f3d8eab5" type="System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="TglInput" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        </orm:field>
+        <orm:field name="_tglUpdate" property="TglUpdate" behavior="readwrite" uniqueId="38ec2315-4124-4a7d-82c2-52b932984957" type="System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="TglUpdate" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        </orm:field>
+        <orm:field name="_formName" property="FormName" behavior="readwrite" uniqueId="3957a620-f565-4673-a8b9-b96b8ba6cdc4" type="System.String">
+          <orm:column name="FormName" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="SatuanDet" behavior="readwrite" uniqueId="3dff6896-1c58-460c-a217-f5449fe6a402">
+        <orm:table name="SatuanDet" />
+        <orm:identity>
+          <orm:multiple-field>
+            <orm:single-field field-name="_kdbarang" />
+            <orm:single-field field-name="_kdSatuan" />
+          </orm:multiple-field>
+        </orm:identity>
+        <orm:field name="_kdbarang" property="Kdbarang" behavior="readwrite" uniqueId="2e9bd5b0-e0a3-4d0a-83ac-314be8924d7c" type="System.String">
+          <orm:column name="kdbarang" sql-type="varchar" nullable="false" length="50" scale="0" primary-key="true" ado-type="Varchar" target-class="BPRoc_LIB.EntitiesModel.Barang" target-field="_kdBarang" />
+        </orm:field>
+        <orm:field name="_par" property="Par" behavior="readwrite" uniqueId="5d9a8937-bc29-4242-a067-14926504f8c9" type="System.Int32">
+          <orm:column name="Par" sql-type="int" nullable="true" length="0" scale="0" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_hargaJual" property="HargaJual" behavior="readwrite" uniqueId="fe4f387a-5b06-4dcb-8512-c54bef699f60" type="System.Decimal">
+          <orm:column name="HargaJual" sql-type="money" nullable="true" length="0" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_hargaBeli" property="HargaBeli" behavior="readwrite" uniqueId="1f82c1d2-a52b-4040-9198-c9ff3a057f9c" type="System.Decimal">
+          <orm:column name="HargaBeli" sql-type="money" nullable="true" length="0" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_isStatus" property="IsStatus" behavior="readwrite" uniqueId="6ba12e3d-fbca-4637-8b5b-c1e97367ae20" type="System.Boolean">
+          <orm:column name="IsStatus" sql-type="bit" nullable="true" length="0" scale="0" ado-type="Bit" />
+        </orm:field>
+        <orm:field name="_barcode" property="Barcode" behavior="readwrite" uniqueId="6f959227-169c-42b2-8a2f-2c02a77da5b1" type="System.String">
+          <orm:column name="barcode" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_username" property="Username" behavior="readwrite" uniqueId="5d43e805-487c-4942-9d7a-79b06763bd85" type="System.String">
+          <orm:column name="Username" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_formName" property="FormName" behavior="readwrite" uniqueId="0f5c0e44-4328-4c21-8c4e-f10cabe8a5c0" type="System.String">
+          <orm:column name="FormName" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_tglInput" property="TglInput" behavior="readwrite" uniqueId="7c83e33c-69cc-4190-8aad-7498773e0d11" type="System.DateTime">
+          <orm:column name="TglInput" sql-type="date" nullable="true" length="0" scale="0" ado-type="Date" />
+        </orm:field>
+        <orm:field name="_tglUpdate" property="TglUpdate" behavior="readwrite" uniqueId="5a7fae82-3906-4d47-8324-e4da7c74145e" type="System.DateTime">
+          <orm:column name="TglUpdate" sql-type="date" nullable="true" length="0" scale="0" ado-type="Date" />
+        </orm:field>
+        <orm:field name="_kdSatuan" property="KdSatuan" behavior="readwrite" uniqueId="d6c04813-3e41-47ed-875d-e002925b8e6a" type="System.String">
+          <orm:column name="kdSatuan" sql-type="varchar" nullable="false" length="50" scale="0" primary-key="true" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_barang" property="Barang" behavior="readwrite" uniqueId="e718a8b1-3fda-434f-9edb-cd7544f260f4" type="BPRoc_LIB.EntitiesModel.Barang">
+          <orm:reference uniqueId="8811220e-ddf7-47e0-a2ac-463329b1bf74">
+            <orm:sharedfield name="_kdbarang" />
+          </orm:reference>
+        </orm:field>
+      </orm:class>
+      <orm:class name="Satuan" behavior="readwrite" uniqueId="d3b1631b-aff2-4ebf-93de-1d5051967db1">
+        <orm:table name="Satuan" />
+        <orm:identity>
+          <orm:single-field field-name="_kdSatuan" />
+        </orm:identity>
+        <orm:field name="_kdSatuan" property="KdSatuan" behavior="readwrite" uniqueId="32dc48b6-11eb-467c-b7d3-5194e354016e" type="System.String">
+          <orm:column name="KdSatuan" sql-type="varchar" nullable="false" length="50" scale="0" primary-key="true" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_nama" property="Nama" behavior="readwrite" uniqueId="0d72bbc4-b961-4a04-95a6-1404a065facc" type="System.String">
+          <orm:column name="Nama" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_userName" property="UserName" behavior="readwrite" uniqueId="b81c7e63-23b9-4386-862e-6d9803c12799" type="System.String">
+          <orm:column name="UserName" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_tglInput" property="TglInput" behavior="readwrite" uniqueId="cbbf0f67-66df-47f7-bd28-73f84207b18f" type="System.DateTime">
+          <orm:column name="TglInput" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        </orm:field>
+        <orm:field name="_tglUpdate" property="TglUpdate" behavior="readwrite" uniqueId="a70d0d0b-4fa6-4f3f-8651-2e2c7217b193" type="System.DateTime">
+          <orm:column name="TglUpdate" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        </orm:field>
+        <orm:field name="_formName" property="FormName" behavior="readwrite" uniqueId="fc84a7cc-8b2d-4e9f-aa91-cbaca6427b82" type="System.String">
+          <orm:column name="FormName" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_isStatus" property="IsStatus" behavior="readwrite" uniqueId="8d0ffa28-cc56-457f-b547-cabc8613fc0b" type="System.Boolean">
+          <orm:column name="IsStatus" sql-type="bit" nullable="true" length="0" scale="0" ado-type="Bit" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="PenjualanDet" behavior="readwrite" uniqueId="820ecaed-1d6f-4380-9e3f-4de7aa292a4a">
+        <orm:table name="PenjualanDet" />
+        <orm:identity>
+          <orm:multiple-field>
+            <orm:single-field field-name="_kdFakturPenj" />
+            <orm:single-field field-name="_kdBarang" />
+          </orm:multiple-field>
+        </orm:identity>
+        <orm:field name="_kdFakturPenj" property="KdFakturPenj" behavior="readwrite" uniqueId="d4e75fe6-74db-49ce-bfb1-132767ce9d05" type="System.String">
+          <orm:column name="KdFakturPenj" sql-type="varchar" nullable="false" length="50" scale="0" primary-key="true" ado-type="Varchar" target-class="BPRoc_LIB.EntitiesModel.Penjualan" target-field="_kdFakturPenj" />
+        </orm:field>
+        <orm:field name="_kdBarang" property="KdBarang" behavior="readwrite" uniqueId="ac73d1a2-8d83-422b-932f-e665fe2921b0" type="System.String">
+          <orm:column name="KdBarang" sql-type="varchar" nullable="false" length="50" scale="0" primary-key="true" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_qty" property="Qty" behavior="readwrite" uniqueId="b3624415-1270-4993-9617-2bb1c9f005a6" type="System.Int32">
+          <orm:column name="Qty" sql-type="int" nullable="false" length="0" scale="0" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_total" property="Total" behavior="readwrite" uniqueId="2bc7c97a-5fde-4b1f-a470-79a2be844f19" type="System.Decimal">
+          <orm:column name="Total" sql-type="money" nullable="false" length="0" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_isStatus" property="IsStatus" behavior="readwrite" uniqueId="539c35b3-32b5-4f4c-b4de-4bf824925ca3" type="System.Boolean">
+          <orm:column name="IsStatus" sql-type="bit" nullable="false" length="0" scale="0" ado-type="Bit" />
+        </orm:field>
+        <orm:field name="_nama" property="Nama" behavior="readwrite" uniqueId="20cce2ec-f93d-468d-a1d2-627465575df3" type="System.String">
+          <orm:column name="Nama" sql-type="varchar(max)" nullable="false" length="0" scale="0" ado-type="LongVarchar" />
+        </orm:field>
+        <orm:field name="_kdsatuan" property="Kdsatuan" behavior="readwrite" uniqueId="9cc3371a-c037-4df4-b6df-8f92ead9a81f" type="System.String">
+          <orm:column name="kdsatuan" sql-type="varchar" nullable="false" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_hargaJual" property="HargaJual" behavior="readwrite" uniqueId="d4e39947-388c-494c-b5ac-7bc9b98a5b75" type="System.Decimal">
+          <orm:column name="HargaJual" sql-type="money" nullable="false" length="0" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_hargaBeli" property="HargaBeli" behavior="readwrite" uniqueId="bc9efb38-71db-4ffb-9a25-95c51904773d" type="System.Decimal">
+          <orm:column name="HargaBeli" sql-type="money" nullable="false" length="0" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_username" property="Username" behavior="readwrite" uniqueId="62d8f6b1-4c96-4ff4-aa18-4075f36c9b0f" type="System.String">
+          <orm:column name="Username" sql-type="varchar" nullable="false" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_tglUpdate" property="TglUpdate" behavior="readwrite" uniqueId="51b1353f-eda4-4d93-85fa-a5ce5fc74078" type="System.DateTime">
+          <orm:column name="TglUpdate" sql-type="date" nullable="false" length="0" scale="0" ado-type="Date" />
+        </orm:field>
+        <orm:field name="_tglInput" property="TglInput" behavior="readwrite" uniqueId="4c680cd0-1f0f-4d99-9a80-9b02dbd28923" type="System.DateTime">
+          <orm:column name="TglInput" sql-type="datetime" nullable="false" length="0" scale="0" ado-type="DateTime" />
+        </orm:field>
+        <orm:field name="_formName" property="FormName" behavior="readwrite" uniqueId="cfa55136-838c-4b52-a29e-8b5ab1df40c9" type="System.String">
+          <orm:column name="FormName" sql-type="varchar" nullable="false" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_nomor" property="nomor" behavior="readwrite" uniqueId="99a3af14-d5dc-45e5-a584-48b7c4bbc0c6" type="System.Int16" />
+        <orm:field name="_penjualan" property="Penjualan" behavior="readwrite" uniqueId="62cb526f-69dc-4c6d-8117-2d1abc56d022" type="BPRoc_LIB.EntitiesModel.Penjualan">
+          <orm:reference uniqueId="ef8d095a-0026-4571-bdfa-549e448ff1cd">
+            <orm:sharedfield name="_kdFakturPenj" />
+          </orm:reference>
+        </orm:field>
+      </orm:class>
+      <orm:class name="Penjualan" behavior="readwrite" uniqueId="e6870506-0d8e-422a-ae00-69c4db99c802">
+        <orm:table name="Penjualan" />
+        <orm:identity>
+          <orm:single-field field-name="_kdFakturPenj" />
+        </orm:identity>
+        <orm:field name="_kdFakturPenj" property="KdFakturPenj" behavior="readwrite" uniqueId="5d0ee39c-c601-47f6-8e58-0d36c83d8d8a" type="System.String">
+          <orm:column name="KdFakturPenj" sql-type="varchar" nullable="false" length="50" scale="0" primary-key="true" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_tglJual" property="TglJual" behavior="readwrite" uniqueId="7921e65b-3004-4e65-a162-1e5105cafdaf" type="System.DateTime">
+          <orm:column name="TglJual" sql-type="datetime" nullable="false" length="0" scale="0" ado-type="DateTime" />
+        </orm:field>
+        <orm:field name="_jam" property="Jam" behavior="readwrite" uniqueId="04714fc2-6de3-4095-9844-decf9f068089" type="System.DateTime">
+          <orm:column name="Jam" sql-type="datetime" nullable="false" length="0" scale="0" ado-type="DateTime" />
+        </orm:field>
+        <orm:field name="_totalBayar" property="TotalBayar" behavior="readwrite" uniqueId="d7d0ab31-b842-40e2-b28c-391fbfefbf7a" type="System.Decimal">
+          <orm:column name="TotalBayar" sql-type="money" nullable="false" length="0" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_userName" property="UserName" behavior="readwrite" uniqueId="7b09cff6-8e14-496c-a339-7d8656d27950" type="System.String">
+          <orm:column name="UserName" sql-type="varchar" nullable="false" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_tglInput" property="TglInput" behavior="readwrite" uniqueId="7bc5400a-f3d0-4631-bc84-43a169c53c2f" type="System.DateTime">
+          <orm:column name="TglInput" sql-type="datetime" nullable="false" length="0" scale="0" ado-type="DateTime" />
+        </orm:field>
+        <orm:field name="_tglUpdate" property="TglUpdate" behavior="readwrite" uniqueId="9e660342-ef17-404f-9996-a322d675ace0" type="System.DateTime">
+          <orm:column name="TglUpdate" sql-type="datetime" nullable="false" length="0" scale="0" ado-type="DateTime" />
+        </orm:field>
+        <orm:field name="_formName" property="FormName" behavior="readwrite" uniqueId="007c5eb7-5b64-4752-8ac2-86a6dba9907b" type="System.String">
+          <orm:column name="FormName" sql-type="varchar" nullable="false" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_isStatus" property="IsStatus" behavior="readwrite" uniqueId="6c7d1d1e-45c7-4ca4-8d06-fe222ef174e9" type="System.Boolean">
+          <orm:column name="IsStatus" sql-type="bit" nullable="false" length="0" scale="0" ado-type="Bit" />
+        </orm:field>
+        <orm:field name="_customer" property="Customer" behavior="readwrite" uniqueId="882247f2-b974-40ba-a7bb-b976d6ab3619" type="System.String">
+          <orm:column name="Customer" sql-type="varchar" nullable="false" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_penjualanDets" property="PenjualanDets" behavior="readwrite" uniqueId="2f3c677d-617e-431e-b52c-f4a1248633bc" type="BPRoc_LIB.EntitiesModel.PenjualanDet">
+          <orm:collection element-class="BPRoc_LIB.EntitiesModel.PenjualanDet" inverse-field="_penjualan" order-by="" uniqueId="ef8d095a-0026-4571-bdfa-549e448ff1cd" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="Pelanggan" behavior="readwrite" uniqueId="860d13f7-ccf9-4b67-a245-f3287cc7dba6">
+        <orm:table name="Pelanggan" />
+        <orm:identity>
+          <orm:single-field field-name="_kdplgn" />
+        </orm:identity>
+        <orm:field name="_kdplgn" property="Kdplgn" behavior="readwrite" uniqueId="8ffa1770-61ea-4084-914d-586342236424" type="System.String">
+          <orm:column name="Kdplgn" sql-type="varchar" nullable="false" length="50" scale="0" primary-key="true" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_nmplgn" property="Nmplgn" behavior="readwrite" uniqueId="c2d3f4a0-26a6-46c3-88dc-31e7ea0eb223" type="System.String">
+          <orm:column name="nmplgn" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_almtplgn" property="Almtplgn" behavior="readwrite" uniqueId="8e18ed41-ff57-4043-a79d-8c0413bd1231" type="System.String">
+          <orm:column name="almtplgn" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_kotaplgn" property="Kotaplgn" behavior="readwrite" uniqueId="c2eb0f45-1f78-433f-90ea-44a107ae095a" type="System.String">
+          <orm:column name="kotaplgn" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_telpplgn" property="Telpplgn" behavior="readwrite" uniqueId="28850f58-8aff-4aa1-9d92-335eeff0a33c" type="System.String">
+          <orm:column name="telpplgn" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_faxplgn" property="Faxplgn" behavior="readwrite" uniqueId="399d84c6-1786-480f-b07e-ce0d1c0bd38d" type="System.String">
+          <orm:column name="faxplgn" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_hpplgn" property="Hpplgn" behavior="readwrite" uniqueId="42d6ad47-fc79-41ba-954b-77d5e1afad93" type="System.String">
+          <orm:column name="hpplgn" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_isStatus" property="IsStatus" behavior="readwrite" uniqueId="f9e1613c-e0ba-4963-b63e-3b955667c2bd" type="System.Boolean">
+          <orm:column name="IsStatus" sql-type="bit" nullable="true" length="0" scale="0" ado-type="Bit" />
+        </orm:field>
+        <orm:field name="_userName" property="UserName" behavior="readwrite" uniqueId="d127ba74-757c-48d0-b2cc-6974b95baf27" type="System.String">
+          <orm:column name="UserName" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_tglInput" property="TglInput" behavior="readwrite" uniqueId="b4539f2b-354f-47bf-8825-f01458ef0bea" type="System.DateTime">
+          <orm:column name="TglInput" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        </orm:field>
+        <orm:field name="_tglUpdate" property="TglUpdate" behavior="readwrite" uniqueId="4ec8712b-e1c3-4279-af5b-1217619b3fb6" type="System.DateTime">
+          <orm:column name="TglUpdate" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        </orm:field>
+        <orm:field name="_formName" property="FormName" behavior="readwrite" uniqueId="d46384fa-f9b8-4076-90f6-0bb070f349e3" type="System.String">
+          <orm:column name="FormName" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="Kategori" behavior="readwrite" uniqueId="ab9297a8-17ba-4d74-ad04-b7a50bc83d53">
+        <orm:table name="Kategori" />
+        <orm:identity>
+          <orm:single-field field-name="_kdKategori" />
+        </orm:identity>
+        <orm:field name="_kdKategori" property="KdKategori" behavior="readwrite" uniqueId="e3c60d9b-59bc-4a5f-8e18-65dd449b4af5" type="System.String">
+          <orm:column name="kdKategori" sql-type="varchar" nullable="false" length="50" scale="0" primary-key="true" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_nama" property="Nama" behavior="readwrite" uniqueId="b7fc01f1-833e-4b1a-942a-18e0c4ac298e" type="System.String">
+          <orm:column name="Nama" sql-type="varchar(max)" nullable="true" length="0" scale="0" ado-type="LongVarchar" />
+        </orm:field>
+        <orm:field name="_userName" property="UserName" behavior="readwrite" uniqueId="2783fa87-f988-4dc8-87c8-bba451abd057" type="System.String">
+          <orm:column name="UserName" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_tglInput" property="TglInput" behavior="readwrite" uniqueId="7bccdc88-1174-4f5c-a893-7e8a7d05e655" type="System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="TglInput" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        </orm:field>
+        <orm:field name="_tglUpdate" property="TglUpdate" behavior="readwrite" uniqueId="dc7421eb-e808-48f9-8a25-29573f09029e" type="System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="TglUpdate" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        </orm:field>
+        <orm:field name="_formName" property="FormName" behavior="readwrite" uniqueId="20529126-3442-4a54-9630-b3576f15b065" type="System.String">
+          <orm:column name="FormName" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_isStatus" property="IsStatus" behavior="readwrite" uniqueId="27ebd738-7687-459a-94fb-44e5c548c0ef" type="System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="IsStatus" sql-type="bit" nullable="true" length="0" scale="0" ado-type="Bit" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="Biaya" behavior="readwrite" uniqueId="bd36b4a0-29d5-4777-b085-3051ac21e6a8">
+        <orm:table name="Biaya" />
+        <orm:identity>
+          <orm:single-field field-name="_noBiaya" />
+        </orm:identity>
+        <orm:field name="_noBiaya" property="NoBiaya" behavior="readwrite" uniqueId="5c0923db-7779-44df-a250-ea1fa48f6381" type="System.String">
+          <orm:column name="NoBiaya" sql-type="varchar" nullable="false" length="50" scale="0" primary-key="true" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_tgl" property="Tgl" behavior="readwrite" uniqueId="7921daeb-e8b7-41f8-8428-885f7ab86dae" type="System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="Tgl" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        </orm:field>
+        <orm:field name="_nama" property="Nama" behavior="readwrite" uniqueId="09e607ba-83f0-43a7-9791-0b095ae36e8b" type="System.String">
+          <orm:column name="Nama" sql-type="varchar(max)" nullable="true" length="0" scale="0" ado-type="LongVarchar" />
+        </orm:field>
+        <orm:field name="_jumlah" property="Jumlah" behavior="readwrite" uniqueId="88e3cdf3-f9ce-46fd-b110-1e07981cdfda" type="System.Nullable`1[[System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="Jumlah" sql-type="money" nullable="true" length="0" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_keterangan" property="Keterangan" behavior="readwrite" uniqueId="7c21e015-6adf-47b1-9c4c-7be2e116b174" type="System.String">
+          <orm:column name="Keterangan" sql-type="varchar(max)" nullable="true" length="0" scale="0" ado-type="LongVarchar" />
+        </orm:field>
+        <orm:field name="_userName" property="UserName" behavior="readwrite" uniqueId="3dc10eca-ec6f-4d59-9fb2-1b5058e04033" type="System.String">
+          <orm:column name="UserName" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_tglInput" property="TglInput" behavior="readwrite" uniqueId="232f0f2d-46de-49a7-9863-7981758f53b4" type="System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="TglInput" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        </orm:field>
+        <orm:field name="_tglUpdate" property="TglUpdate" behavior="readwrite" uniqueId="ea982179-8de9-4132-85d5-0dd2ca7ebe66" type="System.Nullable`1[[System.DateTime, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="TglUpdate" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        </orm:field>
+        <orm:field name="_formName" property="FormName" behavior="readwrite" uniqueId="68f7debd-5c7f-4b9b-9f08-1c8c695d118f" type="System.String">
+          <orm:column name="FormName" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_isStatus" property="IsStatus" behavior="readwrite" uniqueId="2f1d5011-39db-4599-a8a0-033b721b10b4" type="System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="IsStatus" sql-type="bit" nullable="true" length="0" scale="0" ado-type="Bit" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="Barang" behavior="readwrite" uniqueId="17c22cf2-a08a-433c-b1d4-a64ccb184a8c">
+        <orm:table name="Barang" />
+        <orm:identity>
+          <orm:single-field field-name="_kdBarang" />
+        </orm:identity>
+        <orm:field name="_kdBarang" property="KdBarang" behavior="readwrite" uniqueId="2bc90a99-240a-42d1-9beb-dd53b74f827b" type="System.String">
+          <orm:column name="KdBarang" sql-type="varchar" nullable="false" length="50" scale="0" primary-key="true" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_nama" property="Nama" behavior="readwrite" uniqueId="153ca385-ea3d-4f5b-83fe-7ea58090b686" type="System.String">
+          <orm:column name="Nama" sql-type="varchar(max)" nullable="true" length="0" scale="0" ado-type="LongVarchar" />
+        </orm:field>
+        <orm:field name="_kdKategori" property="KdKategori" behavior="readwrite" uniqueId="ff4b2c43-960a-4f4c-ba4e-b766480b769f" type="System.String">
+          <orm:column name="kdKategori" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_lokasi" property="Lokasi" behavior="readwrite" uniqueId="b5aa4cbd-e36e-4225-ba6e-50fc8dcf75e9" type="System.String">
+          <orm:column name="Lokasi" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_userName" property="UserName" behavior="readwrite" uniqueId="12b5f3d1-e6a4-429c-9b22-4eccfdfdf630" type="System.String">
+          <orm:column name="UserName" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_tglInput" property="TglInput" behavior="readwrite" uniqueId="ac4b1fc8-1cb7-432e-9dc0-72fb5a917c93" type="System.DateTime">
+          <orm:column name="TglInput" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        </orm:field>
+        <orm:field name="_tglUpdate" property="TglUpdate" behavior="readwrite" uniqueId="4ce8196b-c0f3-4e5e-bebc-46a5595d4cf5" type="System.DateTime">
+          <orm:column name="TglUpdate" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        </orm:field>
+        <orm:field name="_formName" property="FormName" behavior="readwrite" uniqueId="14fd602c-e745-4154-b658-c7f316bd8aaa" type="System.String">
+          <orm:column name="FormName" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_isStatus" property="IsStatus" behavior="readwrite" uniqueId="d5d17264-51cd-4b80-bcfd-c74609630526" type="System.Boolean">
+          <orm:column name="IsStatus" sql-type="bit" nullable="true" length="0" scale="0" ado-type="Bit" />
+        </orm:field>
+        <orm:field name="_satuanDets" property="SatuanDets" behavior="readwrite" uniqueId="d5b1ecbe-1fcb-4c33-b729-2bb583483620" type="BPRoc_LIB.EntitiesModel.SatuanDet">
+          <orm:collection element-class="BPRoc_LIB.EntitiesModel.SatuanDet" inverse-field="_barang" order-by="" uniqueId="8811220e-ddf7-47e0-a2ac-463329b1bf74" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="Vw_laporanPenjualan" behavior="readwrite" uniqueId="a256846c-f627-4d74-819f-ea0ca2578cec">
+        <orm:table name="vw_laporanPenjualan" view="true" />
+        <orm:identity>
+          <orm:single-field field-name="_kdFakturPenj" />
+        </orm:identity>
+        <orm:field name="_userName" property="UserName" behavior="readwrite" uniqueId="5f6d82ab-4ea2-4a22-b027-2e28a3f2fa47" type="System.String">
+          <orm:column name="UserName" sql-type="varchar" nullable="false" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_total" property="Total" behavior="readwrite" uniqueId="ae8fcc31-9419-44b0-a7f2-bc1e2829ae8e" type="System.Nullable`1[[System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="Total" sql-type="money" nullable="true" length="0" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_tglJual" property="TglJual" behavior="readwrite" uniqueId="f334a96d-c75a-449e-9d18-59b004a8dd5c" type="System.DateTime">
+          <orm:column name="TglJual" sql-type="datetime" nullable="false" length="0" scale="0" ado-type="DateTime" />
+        </orm:field>
+        <orm:field name="_qty" property="Qty" behavior="readwrite" uniqueId="30e538da-52d2-4fcd-b337-27b4bef6fecd" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="Qty" sql-type="int" nullable="true" length="0" scale="0" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_nama" property="Nama" behavior="readwrite" uniqueId="612504c0-86d1-4250-8081-a98a4d5f5774" type="System.String">
+          <orm:column name="Nama" sql-type="varchar(max)" nullable="true" length="0" scale="0" ado-type="LongVarchar" />
+        </orm:field>
+        <orm:field name="_laba" property="Laba" behavior="readwrite" uniqueId="69f3972c-c00d-4029-8bc3-bd10e397b5cb" type="System.Nullable`1[[System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="laba" sql-type="money" nullable="true" length="0" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_kdsatuan" property="Kdsatuan" behavior="readwrite" uniqueId="1f2af00e-c7fc-4650-b7c4-3a747d7a5c38" type="System.String">
+          <orm:column name="kdsatuan" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_kdFakturPenj" property="KdFakturPenj" behavior="readwrite" uniqueId="3ba3c789-13ee-4a0e-aa47-dd87739ab2c6" type="System.String">
+          <orm:column name="KdFakturPenj" sql-type="varchar" nullable="false" length="50" scale="0" primary-key="true" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_hargaJual" property="HargaJual" behavior="readwrite" uniqueId="6646cb2a-24ad-4ee8-ab9d-98f314f854b9" type="System.Nullable`1[[System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="HargaJual" sql-type="money" nullable="true" length="0" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_customer" property="Customer" behavior="readwrite" uniqueId="a3e1c2e1-3ad7-42fc-8128-25d2003628bd" type="System.String">
+          <orm:column name="Customer" sql-type="varchar" nullable="false" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="AuditTrailDet" behavior="readwrite" uniqueId="df50e5d7-c2b5-4b09-a41a-2d8cae758308">
+        <orm:table name="AuditTrailDet" />
+        <orm:identity>
+          <orm:multiple-field>
+            <orm:single-field field-name="_kdAudit" />
+            <orm:single-field field-name="_fields" />
+          </orm:multiple-field>
+        </orm:identity>
+        <orm:field name="_kdAudit" property="KdAudit" behavior="readwrite" uniqueId="fa848ca5-5fbc-450b-82ee-a859219d15a5" type="System.Int32">
+          <orm:column name="kdAudit" sql-type="int" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" target-class="BPRoc_LIB.EntitiesModel.AuditTrail" target-field="_kdAuditTrail" />
+        </orm:field>
+        <orm:field name="_oldValues" property="OldValues" behavior="readwrite" uniqueId="af3fac58-83d6-4413-9396-30372dadc84b" type="System.String">
+          <orm:column name="OldValues" sql-type="varchar" nullable="false" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_newValues" property="NewValues" behavior="readwrite" uniqueId="048b545c-4fad-4040-afb2-7bfcbd99b4ab" type="System.String">
+          <orm:column name="NewValues" sql-type="varchar" nullable="false" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_fields" property="Fields" behavior="readwrite" uniqueId="ada89b85-9b1c-4de9-8de3-41d66ee78046" type="System.String">
+          <orm:column name="Fields" sql-type="varchar" nullable="false" length="50" scale="0" primary-key="true" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_auditTrail" property="AuditTrail" behavior="readwrite" uniqueId="1a813f7b-a942-4030-9adb-753724c6e95d" type="BPRoc_LIB.EntitiesModel.AuditTrail">
+          <orm:reference uniqueId="29cf14f1-293d-4d6b-bcd9-c88d3fa96901">
+            <orm:sharedfield name="_kdAudit" />
+          </orm:reference>
+        </orm:field>
+      </orm:class>
+      <orm:class name="AuditTrail" behavior="readwrite" uniqueId="f9812e77-3b0e-4b27-b3ed-f10e423b42b1">
+        <orm:table name="AuditTrail" />
+        <orm:identity>
+          <orm:key-generator name="autoinc" />
+          <orm:single-field field-name="_kdAuditTrail" />
+        </orm:identity>
+        <orm:field name="_username" property="Username" behavior="readwrite" uniqueId="2da58ddd-6e15-4c7c-abd6-3fd5e8091ef5" type="System.String">
+          <orm:column name="Username" sql-type="varchar" nullable="false" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_tglInput" property="TglInput" behavior="readwrite" uniqueId="16b5bd0b-be53-4c13-ae5f-b6a2fc225570" type="System.DateTime">
+          <orm:column name="TglInput" sql-type="datetime" nullable="false" length="0" scale="0" ado-type="DateTime" />
+        </orm:field>
+        <orm:field name="_kdAuditTrail" property="KdAuditTrail" behavior="readwrite" uniqueId="d60bc2ed-a34b-4095-8f19-5960946ab6f1" type="System.Int32">
+          <orm:column name="KdAuditTrail" sql-type="int" nullable="false" length="0" scale="0" primary-key="true" backend-calculated="true" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_operations" property="Operations" behavior="readwrite" uniqueId="9234a3b6-5b14-41f3-8b3c-c69011889ee6" type="System.String">
+          <orm:column name="Operations" sql-type="varchar" nullable="false" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_modules" property="Modules" behavior="readwrite" uniqueId="faba90e7-21b0-47d9-a2f5-a678edab3af6" type="System.String">
+          <orm:column name="Modules" sql-type="varchar" nullable="false" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_hosts" property="Hosts" behavior="readwrite" uniqueId="a24f0cc4-37de-41e1-808a-23d6535005da" type="System.String">
+          <orm:column name="Hosts" sql-type="varchar" nullable="false" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_actions" property="Actions" behavior="readwrite" uniqueId="18237bda-703d-4b34-ac62-fe9911b6f1c6" type="System.String">
+          <orm:column name="Actions" sql-type="varchar" nullable="false" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_auditTrailDets" property="AuditTrailDets" behavior="readwrite" uniqueId="321f38b3-54fd-4835-a073-52db062d909a" type="BPRoc_LIB.EntitiesModel.AuditTrailDet">
+          <orm:collection element-class="BPRoc_LIB.EntitiesModel.AuditTrailDet" inverse-field="_auditTrail" order-by="" uniqueId="29cf14f1-293d-4d6b-bcd9-c88d3fa96901" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="HostReg" behavior="readwrite" uniqueId="ef92ae10-de9a-4639-9e20-23b681a17227">
+        <orm:table name="HostReg" />
+        <orm:identity>
+          <orm:single-field field-name="_hostName" />
+        </orm:identity>
+        <orm:field name="_descReg" property="DescReg" behavior="readwrite" uniqueId="d39249a9-859d-48a8-be21-69a8ea5f613d" type="System.String">
+          <orm:column name="DescReg" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_dateReg" property="DateReg" behavior="readwrite" uniqueId="9b7978fd-e74c-4239-a43b-9c87897917ae" type="System.String">
+          <orm:column name="DateReg" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_hostName" property="HostName" behavior="readwrite" uniqueId="d3d654ae-1e43-4ad3-b598-63bbb1ab64a8" type="System.String">
+          <orm:column name="HostName" sql-type="varchar" nullable="false" length="50" scale="0" primary-key="true" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_isStatus" property="IsStatus" behavior="readwrite" uniqueId="9c3627f4-0ed9-4b22-9869-54ddcffc2ae5" type="System.Nullable`1[[System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="IsStatus" sql-type="bit" nullable="true" length="0" scale="0" ado-type="Bit" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="Vw_LaporanBarang" behavior="readwrite" uniqueId="a793e1ac-a42e-45d4-a782-7c2710002421">
+        <orm:table name="vw_LaporanBarang" view="true" />
+        <orm:identity>
+          <orm:multiple-field>
+            <orm:single-field field-name="_kdSatuan" />
+            <orm:single-field field-name="_kdBarang" />
+          </orm:multiple-field>
+        </orm:identity>
+        <orm:field name="_par" property="Par" behavior="readwrite" uniqueId="7d556837-93f0-4d69-85dc-c893e5c53a82" type="System.Nullable`1[[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="Par" sql-type="int" nullable="true" length="0" scale="0" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_nama" property="Nama" behavior="readwrite" uniqueId="ad15cd7d-fc78-4f10-8d7e-127e2ccd2915" type="System.String">
+          <orm:column name="Nama" sql-type="varchar(max)" nullable="true" length="0" scale="0" ado-type="LongVarchar" />
+        </orm:field>
+        <orm:field name="_lokasi" property="Lokasi" behavior="readwrite" uniqueId="ebd6ae4c-2c7a-4fce-b56b-8f2620c9b171" type="System.String">
+          <orm:column name="Lokasi" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_kdSatuan" property="KdSatuan" behavior="readwrite" uniqueId="d2a6a01e-7a1f-4216-940b-68ec656d88b8" type="System.String">
+          <orm:column name="kdSatuan" sql-type="varchar" nullable="false" length="50" scale="0" primary-key="true" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_kdKategori" property="KdKategori" behavior="readwrite" uniqueId="cf28d165-4197-4723-a75f-538894c1fa4d" type="System.String">
+          <orm:column name="kdKategori" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_hargaJual" property="HargaJual" behavior="readwrite" uniqueId="91e5edc8-dd60-4b5b-85d7-eeb72cbd5d3b" type="System.Nullable`1[[System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="HargaJual" sql-type="money" nullable="true" length="0" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_hargaBeli" property="HargaBeli" behavior="readwrite" uniqueId="451a67eb-59c7-48f5-8230-30e4778a8bdc" type="System.Nullable`1[[System.Decimal, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]]">
+          <orm:column name="HargaBeli" sql-type="money" nullable="true" length="0" scale="0" ado-type="Decimal" />
+        </orm:field>
+        <orm:field name="_kdBarang" property="KdBarang" behavior="readwrite" uniqueId="467e078a-274b-4c5e-bdc3-15b1f96f43b7" type="System.String">
+          <orm:column name="KdBarang" sql-type="varchar" nullable="false" length="50" scale="0" primary-key="true" ado-type="Varchar" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="T_Setting" behavior="readwrite" uniqueId="5a5ec7c4-c202-4f83-8696-7ff5564f73e1">
+        <orm:table name="T_Setting" />
+        <orm:identity>
+          <orm:single-field field-name="_tname" />
+        </orm:identity>
+        <orm:field name="_tValue" property="TValue" behavior="readwrite" uniqueId="4f387605-9839-4aa6-9242-506a876d7a38" type="System.String">
+          <orm:column name="TValue" sql-type="varchar" nullable="false" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_tname" property="Tname" behavior="readwrite" uniqueId="07351b3d-1299-420f-aa3e-bb1751f6ce25" type="System.String">
+          <orm:column name="Tname" sql-type="varchar" nullable="false" length="50" scale="0" primary-key="true" ado-type="Varchar" />
+        </orm:field>
+      </orm:class>
+      <orm:class name="ErrorLog" behavior="readwrite" uniqueId="ada0284e-cdf0-4314-9677-b95c3c366b8c">
+        <orm:table name="ErrorLog" />
+        <orm:identity>
+          <orm:key-generator name="autoinc" />
+          <orm:single-field field-name="_iD" />
+        </orm:identity>
+        <orm:field name="_queryText" property="QueryText" behavior="readwrite" uniqueId="61c2a2eb-1321-41b0-89bf-9c8771bcb6fc" type="System.String">
+          <orm:column name="QueryText" sql-type="text" nullable="true" length="0" scale="0" ado-type="LongVarchar" />
+        </orm:field>
+        <orm:field name="_modulName" property="ModulName" behavior="readwrite" uniqueId="59b98f61-0ded-41c5-bc70-3d3daade4758" type="System.String">
+          <orm:column name="ModulName" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_iD" property="ID" behavior="readwrite" uniqueId="008e319f-d993-453b-956f-fffbb65e588b" type="System.Int32">
+          <orm:column name="ID" sql-type="int" nullable="false" length="0" scale="0" primary-key="true" backend-calculated="true" ado-type="Int32" />
+        </orm:field>
+        <orm:field name="_hostName" property="HostName" behavior="readwrite" uniqueId="431dceec-4a89-4c41-8cc8-2f99b1ab3e48" type="System.String">
+          <orm:column name="HostName" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_formName" property="FormName" behavior="readwrite" uniqueId="0e3d50fd-bae5-474c-a7e5-3b8371ac38cf" type="System.String">
+          <orm:column name="FormName" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        </orm:field>
+        <orm:field name="_errorText" property="ErrorText" behavior="readwrite" uniqueId="3fc6c192-9264-44d9-bda8-4b7c3e609ec2" type="System.String">
+          <orm:column name="ErrorText" sql-type="text" nullable="true" length="0" scale="0" ado-type="LongVarchar" />
+        </orm:field>
+      </orm:class>
+    </orm:namespace>
+    <orm:schema schema="">
+      <orm:table name="T_User">
+        <orm:column name="UserName" sql-type="varchar" nullable="false" length="50" scale="0" primary-key="true" ado-type="Varchar" />
+        <orm:column name="LevelUser" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="PasswordUser" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="TglInput" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        <orm:column name="TglUpdate" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        <orm:column name="FormName" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="IsStatus" sql-type="bit" nullable="true" length="0" scale="0" ado-type="Bit" />
+        <orm:column name="UserInput" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+      </orm:table>
+      <orm:table name="T_Owner">
+        <orm:column name="Nama" sql-type="varchar" nullable="false" length="50" scale="0" primary-key="true" ado-type="Varchar" />
+        <orm:column name="Alamat" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="Telepon" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="Mobile" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="Fax" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="EMail" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="NoRegister" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="UserName" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="TglInput" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        <orm:column name="TglUpdate" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        <orm:column name="IsStatus" sql-type="bit" nullable="true" length="0" scale="0" ado-type="Bit" />
+        <orm:column name="NamaToko" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+      </orm:table>
+      <orm:table name="Supplier">
+        <orm:column name="KdSupplier" sql-type="varchar" nullable="false" length="50" scale="0" primary-key="true" ado-type="Varchar" />
+        <orm:column name="NmSup" sql-type="varchar(max)" nullable="true" length="0" scale="0" ado-type="LongVarchar" />
+        <orm:column name="AlmtSup" sql-type="text" nullable="true" length="0" scale="0" ado-type="LongVarchar" />
+        <orm:column name="Kota" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="TlpSup" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="FaxSup" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="HpSup" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="IsStatus" sql-type="bit" nullable="true" length="0" scale="0" ado-type="Bit" />
+        <orm:column name="UserName" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="TglInput" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        <orm:column name="TglUpdate" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        <orm:column name="FormName" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+      </orm:table>
+      <orm:table name="SatuanDet">
+        <orm:column name="kdbarang" sql-type="varchar" nullable="false" length="50" scale="0" primary-key="true" ado-type="Varchar" target-class="BPRoc_LIB.EntitiesModel.Barang" target-field="_kdBarang" />
+        <orm:column name="Par" sql-type="int" nullable="true" length="0" scale="0" ado-type="Int32" />
+        <orm:column name="HargaJual" sql-type="money" nullable="true" length="0" scale="0" ado-type="Decimal" />
+        <orm:column name="HargaBeli" sql-type="money" nullable="true" length="0" scale="0" ado-type="Decimal" />
+        <orm:column name="IsStatus" sql-type="bit" nullable="true" length="0" scale="0" ado-type="Bit" />
+        <orm:column name="barcode" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="Username" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="FormName" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="TglInput" sql-type="date" nullable="true" length="0" scale="0" ado-type="Date" />
+        <orm:column name="TglUpdate" sql-type="date" nullable="true" length="0" scale="0" ado-type="Date" />
+        <orm:column name="kdSatuan" sql-type="varchar" nullable="false" length="50" scale="0" primary-key="true" ado-type="Varchar" />
+      </orm:table>
+      <orm:table name="Satuan">
+        <orm:column name="KdSatuan" sql-type="varchar" nullable="false" length="50" scale="0" primary-key="true" ado-type="Varchar" />
+        <orm:column name="Nama" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="UserName" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="TglInput" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        <orm:column name="TglUpdate" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        <orm:column name="FormName" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="IsStatus" sql-type="bit" nullable="true" length="0" scale="0" ado-type="Bit" />
+      </orm:table>
+      <orm:table name="PenjualanDet">
+        <orm:column name="KdFakturPenj" sql-type="varchar" nullable="false" length="50" scale="0" primary-key="true" ado-type="Varchar" target-class="BPRoc_LIB.EntitiesModel.Penjualan" target-field="_kdFakturPenj" />
+        <orm:column name="KdBarang" sql-type="varchar" nullable="false" length="50" scale="0" primary-key="true" ado-type="Varchar" />
+        <orm:column name="Qty" sql-type="int" nullable="false" length="0" scale="0" ado-type="Int32" />
+        <orm:column name="Total" sql-type="money" nullable="false" length="0" scale="0" ado-type="Decimal" />
+        <orm:column name="IsStatus" sql-type="bit" nullable="false" length="0" scale="0" ado-type="Bit" />
+        <orm:column name="Nama" sql-type="varchar(max)" nullable="false" length="0" scale="0" ado-type="LongVarchar" />
+        <orm:column name="kdsatuan" sql-type="varchar" nullable="false" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="HargaJual" sql-type="money" nullable="false" length="0" scale="0" ado-type="Decimal" />
+        <orm:column name="HargaBeli" sql-type="money" nullable="false" length="0" scale="0" ado-type="Decimal" />
+        <orm:column name="Username" sql-type="varchar" nullable="false" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="TglUpdate" sql-type="date" nullable="false" length="0" scale="0" ado-type="Date" />
+        <orm:column name="TglInput" sql-type="datetime" nullable="false" length="0" scale="0" ado-type="DateTime" />
+        <orm:column name="FormName" sql-type="varchar" nullable="false" length="50" scale="0" ado-type="Varchar" />
+      </orm:table>
+      <orm:table name="Penjualan">
+        <orm:column name="KdFakturPenj" sql-type="varchar" nullable="false" length="50" scale="0" primary-key="true" ado-type="Varchar" />
+        <orm:column name="TglJual" sql-type="datetime" nullable="false" length="0" scale="0" ado-type="DateTime" />
+        <orm:column name="Jam" sql-type="datetime" nullable="false" length="0" scale="0" ado-type="DateTime" />
+        <orm:column name="TotalBayar" sql-type="money" nullable="false" length="0" scale="0" ado-type="Decimal" />
+        <orm:column name="UserName" sql-type="varchar" nullable="false" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="TglInput" sql-type="datetime" nullable="false" length="0" scale="0" ado-type="DateTime" />
+        <orm:column name="TglUpdate" sql-type="datetime" nullable="false" length="0" scale="0" ado-type="DateTime" />
+        <orm:column name="FormName" sql-type="varchar" nullable="false" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="IsStatus" sql-type="bit" nullable="false" length="0" scale="0" ado-type="Bit" />
+        <orm:column name="Customer" sql-type="varchar" nullable="false" length="50" scale="0" ado-type="Varchar" />
+      </orm:table>
+      <orm:table name="Pelanggan">
+        <orm:column name="Kdplgn" sql-type="varchar" nullable="false" length="50" scale="0" primary-key="true" ado-type="Varchar" />
+        <orm:column name="nmplgn" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="almtplgn" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="kotaplgn" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="telpplgn" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="faxplgn" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="hpplgn" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="IsStatus" sql-type="bit" nullable="true" length="0" scale="0" ado-type="Bit" />
+        <orm:column name="UserName" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="TglInput" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        <orm:column name="TglUpdate" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        <orm:column name="FormName" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+      </orm:table>
+      <orm:table name="Kategori">
+        <orm:column name="kdKategori" sql-type="varchar" nullable="false" length="50" scale="0" primary-key="true" ado-type="Varchar" />
+        <orm:column name="Nama" sql-type="varchar(max)" nullable="true" length="0" scale="0" ado-type="LongVarchar" />
+        <orm:column name="UserName" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="TglInput" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        <orm:column name="TglUpdate" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        <orm:column name="FormName" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="IsStatus" sql-type="bit" nullable="true" length="0" scale="0" ado-type="Bit" />
+      </orm:table>
+      <orm:table name="Biaya">
+        <orm:column name="NoBiaya" sql-type="varchar" nullable="false" length="50" scale="0" primary-key="true" ado-type="Varchar" />
+        <orm:column name="Tgl" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        <orm:column name="Nama" sql-type="varchar(max)" nullable="true" length="0" scale="0" ado-type="LongVarchar" />
+        <orm:column name="Jumlah" sql-type="money" nullable="true" length="0" scale="0" ado-type="Decimal" />
+        <orm:column name="Keterangan" sql-type="varchar(max)" nullable="true" length="0" scale="0" ado-type="LongVarchar" />
+        <orm:column name="UserName" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="TglInput" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        <orm:column name="TglUpdate" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        <orm:column name="FormName" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="IsStatus" sql-type="bit" nullable="true" length="0" scale="0" ado-type="Bit" />
+      </orm:table>
+      <orm:table name="Barang">
+        <orm:column name="KdBarang" sql-type="varchar" nullable="false" length="50" scale="0" primary-key="true" ado-type="Varchar" />
+        <orm:column name="Nama" sql-type="varchar(max)" nullable="true" length="0" scale="0" ado-type="LongVarchar" />
+        <orm:column name="kdKategori" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="Lokasi" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="UserName" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="TglInput" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        <orm:column name="TglUpdate" sql-type="datetime" nullable="true" length="0" scale="0" ado-type="DateTime" />
+        <orm:column name="FormName" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="IsStatus" sql-type="bit" nullable="true" length="0" scale="0" ado-type="Bit" />
+      </orm:table>
+      <orm:table name="AuditTrailDet">
+        <orm:column name="kdAudit" sql-type="int" nullable="false" length="0" scale="0" primary-key="true" ado-type="Int32" target-class="BPRoc_LIB.EntitiesModel.AuditTrail" target-field="_kdAuditTrail" />
+        <orm:column name="OldValues" sql-type="varchar" nullable="false" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="NewValues" sql-type="varchar" nullable="false" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="Fields" sql-type="varchar" nullable="false" length="50" scale="0" primary-key="true" ado-type="Varchar" />
+      </orm:table>
+      <orm:table name="AuditTrail">
+        <orm:column name="Username" sql-type="varchar" nullable="false" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="TglInput" sql-type="datetime" nullable="false" length="0" scale="0" ado-type="DateTime" />
+        <orm:column name="KdAuditTrail" sql-type="int" nullable="false" length="0" scale="0" primary-key="true" backend-calculated="true" ado-type="Int32" />
+        <orm:column name="Operations" sql-type="varchar" nullable="false" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="Modules" sql-type="varchar" nullable="false" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="Hosts" sql-type="varchar" nullable="false" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="Actions" sql-type="varchar" nullable="false" length="50" scale="0" ado-type="Varchar" />
+      </orm:table>
+      <orm:table name="HostReg">
+        <orm:column name="DescReg" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="DateReg" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="HostName" sql-type="varchar" nullable="false" length="50" scale="0" primary-key="true" ado-type="Varchar" />
+        <orm:column name="IsStatus" sql-type="bit" nullable="true" length="0" scale="0" ado-type="Bit" />
+      </orm:table>
+      <orm:table name="T_Setting">
+        <orm:column name="TValue" sql-type="varchar" nullable="false" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="Tname" sql-type="varchar" nullable="false" length="50" scale="0" primary-key="true" ado-type="Varchar" />
+      </orm:table>
+      <orm:table name="ErrorLog">
+        <orm:column name="QueryText" sql-type="text" nullable="true" length="0" scale="0" ado-type="LongVarchar" />
+        <orm:column name="ModulName" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="ID" sql-type="int" nullable="false" length="0" scale="0" primary-key="true" backend-calculated="true" ado-type="Int32" />
+        <orm:column name="HostName" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="FormName" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="ErrorText" sql-type="text" nullable="true" length="0" scale="0" ado-type="LongVarchar" />
+      </orm:table>
+      <orm:table name="vw_laporanPenjualan" view="true">
+        <orm:column name="UserName" sql-type="varchar" nullable="false" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="Total" sql-type="money" nullable="true" length="0" scale="0" ado-type="Decimal" />
+        <orm:column name="TglJual" sql-type="datetime" nullable="false" length="0" scale="0" ado-type="DateTime" />
+        <orm:column name="Qty" sql-type="int" nullable="true" length="0" scale="0" ado-type="Int32" />
+        <orm:column name="Nama" sql-type="varchar(max)" nullable="true" length="0" scale="0" ado-type="LongVarchar" />
+        <orm:column name="laba" sql-type="money" nullable="true" length="0" scale="0" ado-type="Decimal" />
+        <orm:column name="kdsatuan" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="KdFakturPenj" sql-type="varchar" nullable="false" length="50" scale="0" primary-key="true" ado-type="Varchar" />
+        <orm:column name="HargaJual" sql-type="money" nullable="true" length="0" scale="0" ado-type="Decimal" />
+        <orm:column name="Customer" sql-type="varchar" nullable="false" length="50" scale="0" ado-type="Varchar" />
+      </orm:table>
+      <orm:table name="vw_LaporanBarang" view="true">
+        <orm:column name="Par" sql-type="int" nullable="true" length="0" scale="0" ado-type="Int32" />
+        <orm:column name="Nama" sql-type="varchar(max)" nullable="true" length="0" scale="0" ado-type="LongVarchar" />
+        <orm:column name="Lokasi" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="kdSatuan" sql-type="varchar" nullable="false" length="50" scale="0" primary-key="true" ado-type="Varchar" />
+        <orm:column name="kdKategori" sql-type="varchar" nullable="true" length="50" scale="0" ado-type="Varchar" />
+        <orm:column name="HargaJual" sql-type="money" nullable="true" length="0" scale="0" ado-type="Decimal" />
+        <orm:column name="HargaBeli" sql-type="money" nullable="true" length="0" scale="0" ado-type="Decimal" />
+        <orm:column name="KdBarang" sql-type="varchar" nullable="false" length="50" scale="0" primary-key="true" ado-type="Varchar" />
+      </orm:table>
+    </orm:schema>
+  </orm:orm>
+  <ModelSettings xmlns="">
+    <AppConfigConnectionPropertyName>MandiriConnection</AppConfigConnectionPropertyName>
+    <AppConfigConnectionString>data source=.;initial catalog=Mandiri;persist security info=True;user id=sa;password=keymaker</AppConfigConnectionString>
+    <InitialCatalog>Mandiri</InitialCatalog>
+    <NamingSettings>
+      <ClassRules>
+        <CaseMode>PascalCase</CaseMode>
+        <PluralizationMode>Singularize</PluralizationMode>
+      </ClassRules>
+      <FieldRules>
+        <AddPrefix>_</AddPrefix>
+        <CaseMode>CamelCase</CaseMode>
+      </FieldRules>
+      <PropertyRules>
+        <CaseMode>PascalCase</CaseMode>
+      </PropertyRules>
+    </NamingSettings>
+    <CodeGenerationSettings>
+      <MappingDefinitionType>Xml</MappingDefinitionType>
+      <OutputMode>SubNamespaces</OutputMode>
+    </CodeGenerationSettings>
+    <SchemaUpdateSettings>
+      <DeploymentProject>BPRoc_LIB</DeploymentProject>
+      <DeploymentDirectory>G:\Documents\Project\Mandiri\Repository\Model</DeploymentDirectory>
+    </SchemaUpdateSettings>
+    <BackendConfigurationSettings>
+      <BackendConfiguration>
+        <Backend>mssql</Backend>
+        <ProviderName>System.Data.SqlClient</ProviderName>
+      </BackendConfiguration>
+    </BackendConfigurationSettings>
+  </ModelSettings>
+  <Types>
+    <DomainClass Id="716fc48e-f967-4846-a518-fc5064944df8" name="T_User" namespace="EntitiesModel" showPropertiesCompartment="true" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="d4e24436-bb5f-4f06-81e1-164a2038745d" name="UserName" label="UserName : String" kind="Persistent" identity="true" fieldName="_userName" />
+      <Property Id="0ea9964f-5b6e-4f9f-b403-423bb36e6988" name="FormName" label="FormName : String" kind="Persistent" fieldName="_formName" />
+      <Property Id="ede14788-b919-4bd9-8a91-c64faca4c0c4" name="IsStatus" type="Boolean" label="IsStatus : Boolean" nullable="true" kind="Persistent" fieldName="_isStatus" />
+      <Property Id="7e4e7461-8f9c-4888-9ecb-ece74abc624f" name="LevelUser" label="LevelUser : String" kind="Persistent" fieldName="_levelUser" />
+      <Property Id="e3355926-2fde-4f7d-a5be-b5e4c22e1236" name="PasswordUser" label="PasswordUser : String" kind="Persistent" fieldName="_passwordUser" />
+      <Property Id="969b89a9-b321-452a-a5f7-1b59dda87051" name="TglInput" type="DateTime" label="TglInput : DateTime" nullable="true" kind="Persistent" fieldName="_tglInput" />
+      <Property Id="0e6397c7-5781-4199-94bd-d157e5004090" name="TglUpdate" type="DateTime" label="TglUpdate : DateTime" nullable="true" kind="Persistent" fieldName="_tglUpdate" />
+      <Property Id="88420135-fe78-4bf1-80d1-8f695bd7026d" name="UserInput" label="UserInput : String" kind="Persistent" fieldName="_userInput" />
+    </DomainClass>
+    <DomainClass Id="9a77ea60-1066-497a-9043-6890ceabc8ae" name="T_Owner" namespace="EntitiesModel" showPropertiesCompartment="true" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="2996586c-7fc0-4226-9592-0f319d589c44" name="Nama" label="Nama : String" kind="Persistent" identity="true" fieldName="_nama" />
+      <Property Id="30af2f3d-afe2-4e45-b696-d6418d378473" name="Alamat" label="Alamat : String" kind="Persistent" fieldName="_alamat" />
+      <Property Id="529a3276-b1ed-472f-8351-733f2f1dd7ae" name="EMail" label="EMail : String" kind="Persistent" fieldName="_eMail" />
+      <Property Id="aad593b2-b0f8-4c13-a53d-2e64cfe588e0" name="Fax" label="Fax : String" kind="Persistent" fieldName="_fax" />
+      <Property Id="ac588e87-8684-4f64-988b-a9c7e6c738cf" name="IsStatus" type="Boolean" label="IsStatus : Boolean" kind="Persistent" fieldName="_isStatus" />
+      <Property Id="c16b4568-b4c1-4a35-9102-68a38d630a1b" name="Mobile" label="Mobile : String" kind="Persistent" fieldName="_mobile" />
+      <Property Id="71565375-6f50-429c-827c-70c59b736e8b" name="NoRegister" label="NoRegister : String" kind="Persistent" fieldName="_noRegister" />
+      <Property Id="8d7f42ee-9b33-43f4-b3e1-2020dc330f34" name="Photo" type="Byte[]" label="Photo : Byte[]" kind="Persistent" fieldName="_photo" />
+      <Property Id="ac808bd9-54d6-40e1-b3c1-0971ceba49a2" name="Telepon" label="Telepon : String" kind="Persistent" fieldName="_telepon" />
+      <Property Id="58c606c1-b197-4521-84fc-32deb5cec67c" name="TglInput" type="DateTime" label="TglInput : DateTime" nullable="true" kind="Persistent" fieldName="_tglInput" />
+      <Property Id="d2a832b7-d905-4512-87ae-5efd9bb8b211" name="TglUpdate" type="DateTime" label="TglUpdate : DateTime" nullable="true" kind="Persistent" fieldName="_tglUpdate" />
+      <Property Id="3df8acb7-fe59-4a4e-8589-c46a18d6b94f" name="UserName" label="UserName : String" kind="Persistent" fieldName="_userName" />
+      <Property Id="beb33f68-2873-4158-82b9-0dee8504f5f9" name="NamaToko" label="NamaToko : String" kind="Persistent" fieldName="_namaToko" />
+    </DomainClass>
+    <DomainClass Id="7ac6c710-ff61-4f29-8ef8-f3e945924272" name="Supplier" namespace="EntitiesModel" showPropertiesCompartment="true" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="de4d0b17-2a25-4db4-9998-0069850fc09e" name="KdSupplier" label="KdSupplier : String" kind="Persistent" identity="true" fieldName="_kdSupplier" />
+      <Property Id="628d4f72-9af0-41b7-bb15-0a887053ddbb" name="AlmtSup" label="AlmtSup : String" kind="Persistent" fieldName="_almtSup" />
+      <Property Id="fc6bb9ab-1777-4e04-9e85-4e108e93b615" name="FaxSup" label="FaxSup : String" kind="Persistent" fieldName="_faxSup" />
+      <Property Id="3957a620-f565-4673-a8b9-b96b8ba6cdc4" name="FormName" label="FormName : String" kind="Persistent" fieldName="_formName" />
+      <Property Id="b10e33ab-8093-40a5-ad94-0d071f7481a7" name="HpSup" label="HpSup : String" kind="Persistent" fieldName="_hpSup" />
+      <Property Id="23559677-089f-4635-a4bf-78a1bf290006" name="IsStatus" type="Boolean" label="IsStatus : Boolean" nullable="true" kind="Persistent" fieldName="_isStatus" />
+      <Property Id="6407326f-18e7-4673-9acf-556ca7ff1761" name="Kota" label="Kota : String" kind="Persistent" fieldName="_kota" />
+      <Property Id="4fe0be34-b968-443a-8223-f0c124ec6731" name="NmSup" label="NmSup : String" kind="Persistent" fieldName="_nmSup" />
+      <Property Id="371300fa-d53e-416e-a032-bb86f3d8eab5" name="TglInput" type="DateTime" label="TglInput : DateTime" nullable="true" kind="Persistent" fieldName="_tglInput" />
+      <Property Id="38ec2315-4124-4a7d-82c2-52b932984957" name="TglUpdate" type="DateTime" label="TglUpdate : DateTime" nullable="true" kind="Persistent" fieldName="_tglUpdate" />
+      <Property Id="e4774ba7-3a2e-470d-9104-6fa2c2c300dc" name="TlpSup" label="TlpSup : String" kind="Persistent" fieldName="_tlpSup" />
+      <Property Id="003e9db3-d82a-49a0-b8af-1e35179c90bc" name="UserName" label="UserName : String" kind="Persistent" fieldName="_userName" />
+    </DomainClass>
+    <DomainClass Id="3dff6896-1c58-460c-a217-f5449fe6a402" name="SatuanDet" namespace="EntitiesModel" showPropertiesCompartment="true" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="2e9bd5b0-e0a3-4d0a-83ac-314be8924d7c" name="Kdbarang" label="Kdbarang : String" kind="Persistent" identity="true" fieldName="_kdbarang" />
+      <Property Id="6f959227-169c-42b2-8a2f-2c02a77da5b1" name="Barcode" label="Barcode : String" kind="Persistent" fieldName="_barcode" />
+      <Property Id="0f5c0e44-4328-4c21-8c4e-f10cabe8a5c0" name="FormName" label="FormName : String" kind="Persistent" fieldName="_formName" />
+      <Property Id="1f82c1d2-a52b-4040-9198-c9ff3a057f9c" name="HargaBeli" type="Decimal" label="HargaBeli : Decimal" kind="Persistent" fieldName="_hargaBeli" />
+      <Property Id="fe4f387a-5b06-4dcb-8512-c54bef699f60" name="HargaJual" type="Decimal" label="HargaJual : Decimal" kind="Persistent" fieldName="_hargaJual" />
+      <Property Id="6ba12e3d-fbca-4637-8b5b-c1e97367ae20" name="IsStatus" type="Boolean" label="IsStatus : Boolean" kind="Persistent" fieldName="_isStatus" />
+      <Property Id="5d9a8937-bc29-4242-a067-14926504f8c9" name="Par" type="Int32" label="Par : Int32" kind="Persistent" fieldName="_par" />
+      <Property Id="7c83e33c-69cc-4190-8aad-7498773e0d11" name="TglInput" type="DateTime" label="TglInput : DateTime" kind="Persistent" fieldName="_tglInput" />
+      <Property Id="5a7fae82-3906-4d47-8324-e4da7c74145e" name="TglUpdate" type="DateTime" label="TglUpdate : DateTime" kind="Persistent" fieldName="_tglUpdate" />
+      <Property Id="5d43e805-487c-4942-9d7a-79b06763bd85" name="Username" label="Username : String" kind="Persistent" fieldName="_username" />
+      <Property Id="d6c04813-3e41-47ed-875d-e002925b8e6a" name="KdSatuan" label="KdSatuan : String" kind="Persistent" identity="true" fieldName="_kdSatuan" />
+      <AssociationTargets>
+        <Association Id="8811220e-ddf7-47e0-a2ac-463329b1bf74" SourceMultiplicity="One" name="SatuanDetHasBarang">
+          <DomainClassMoniker name="/POSModel/Barang" />
+          <targetNavigationalProperty>
+            <associationDefinesTargetProperty Id="138767b9-134a-426b-89aa-859bfdb5b59b">
+              <NavigationalPropertyMoniker name="/POSModel/Barang/SatuanDets" />
+            </associationDefinesTargetProperty>
+          </targetNavigationalProperty>
+          <sourceNavigationalProperty>
+            <associationDefinesSourceProperty Id="c345cbdb-02ec-4f0f-9fea-85d664ee4e28">
+              <NavigationalPropertyMoniker name="/POSModel/SatuanDet/Barang" />
+            </associationDefinesSourceProperty>
+          </sourceNavigationalProperty>
+        </Association>
+      </AssociationTargets>
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="9b64c73e-90a1-41de-bc11-d99dfb1635ed">
+          <NavigationalProperty Id="e718a8b1-3fda-434f-9edb-cd7544f260f4" name="Barang" type="Barang" label="Barang : Barang" nullable="true" kind="Persistent" fieldName="_barang" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+    <DomainClass Id="d3b1631b-aff2-4ebf-93de-1d5051967db1" name="Satuan" namespace="EntitiesModel" showPropertiesCompartment="true" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="32dc48b6-11eb-467c-b7d3-5194e354016e" name="KdSatuan" label="KdSatuan : String" kind="Persistent" identity="true" fieldName="_kdSatuan" />
+      <Property Id="fc84a7cc-8b2d-4e9f-aa91-cbaca6427b82" name="FormName" label="FormName : String" kind="Persistent" fieldName="_formName" />
+      <Property Id="8d0ffa28-cc56-457f-b547-cabc8613fc0b" name="IsStatus" type="Boolean" label="IsStatus : Boolean" kind="Persistent" fieldName="_isStatus" />
+      <Property Id="0d72bbc4-b961-4a04-95a6-1404a065facc" name="Nama" label="Nama : String" kind="Persistent" fieldName="_nama" />
+      <Property Id="cbbf0f67-66df-47f7-bd28-73f84207b18f" name="TglInput" type="DateTime" label="TglInput : DateTime" kind="Persistent" fieldName="_tglInput" />
+      <Property Id="a70d0d0b-4fa6-4f3f-8651-2e2c7217b193" name="TglUpdate" type="DateTime" label="TglUpdate : DateTime" kind="Persistent" fieldName="_tglUpdate" />
+      <Property Id="b81c7e63-23b9-4386-862e-6d9803c12799" name="UserName" label="UserName : String" kind="Persistent" fieldName="_userName" />
+    </DomainClass>
+    <DomainClass Id="820ecaed-1d6f-4380-9e3f-4de7aa292a4a" name="PenjualanDet" namespace="EntitiesModel" showPropertiesCompartment="true" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="ac73d1a2-8d83-422b-932f-e665fe2921b0" name="KdBarang" label="KdBarang : String" kind="Persistent" identity="true" fieldName="_kdBarang" />
+      <Property Id="d4e75fe6-74db-49ce-bfb1-132767ce9d05" name="KdFakturPenj" label="KdFakturPenj : String" kind="Persistent" identity="true" fieldName="_kdFakturPenj" />
+      <Property Id="539c35b3-32b5-4f4c-b4de-4bf824925ca3" name="IsStatus" type="Boolean" label="IsStatus : Boolean" kind="Persistent" fieldName="_isStatus" />
+      <Property Id="b3624415-1270-4993-9617-2bb1c9f005a6" name="Qty" type="Int32" label="Qty : Int32" kind="Persistent" fieldName="_qty" />
+      <Property Id="4b48144d-fb80-4eab-ba2d-626cb671c40f" name="Satuan" label="Satuan : String" kind="Persistent" fieldName="_satuan" />
+      <Property Id="2bc7c97a-5fde-4b1f-a470-79a2be844f19" name="Total" type="Decimal" label="Total : Decimal" kind="Persistent" fieldName="_total" />
+      <Property Id="20cce2ec-f93d-468d-a1d2-627465575df3" name="Nama" label="Nama : String" kind="Persistent" fieldName="_nama" />
+      <Property Id="9cc3371a-c037-4df4-b6df-8f92ead9a81f" name="Kdsatuan" label="Kdsatuan : String" kind="Persistent" fieldName="_kdsatuan" />
+      <Property Id="d4e39947-388c-494c-b5ac-7bc9b98a5b75" name="HargaJual" type="Decimal" label="HargaJual : Decimal" kind="Persistent" fieldName="_hargaJual" />
+      <Property Id="bc9efb38-71db-4ffb-9a25-95c51904773d" name="HargaBeli" type="Decimal" label="HargaBeli : Decimal" kind="Persistent" fieldName="_hargaBeli" />
+      <Property Id="62d8f6b1-4c96-4ff4-aa18-4075f36c9b0f" name="Username" label="Username : String" kind="Persistent" fieldName="_username" />
+      <Property Id="51b1353f-eda4-4d93-85fa-a5ce5fc74078" name="TglUpdate" type="DateTime" label="TglUpdate : DateTime" kind="Persistent" fieldName="_tglUpdate" />
+      <Property Id="4c680cd0-1f0f-4d99-9a80-9b02dbd28923" name="TglInput" type="DateTime" label="TglInput : DateTime" kind="Persistent" fieldName="_tglInput" />
+      <Property Id="cfa55136-838c-4b52-a29e-8b5ab1df40c9" name="FormName" label="FormName : String" kind="Persistent" fieldName="_formName" />
+      <Property Id="99a3af14-d5dc-45e5-a584-48b7c4bbc0c6" name="nomor" type="Int16" label="nomor : Int16" />
+      <AssociationTargets>
+        <Association Id="ef8d095a-0026-4571-bdfa-549e448ff1cd" SourceMultiplicity="One" name="PenjualanDetHasPenjualan">
+          <DomainClassMoniker name="/POSModel/Penjualan" />
+          <targetNavigationalProperty>
+            <associationDefinesTargetProperty Id="6696e9b0-0ad0-4018-939c-2ea98b2c1b72">
+              <NavigationalPropertyMoniker name="/POSModel/Penjualan/PenjualanDets" />
+            </associationDefinesTargetProperty>
+          </targetNavigationalProperty>
+          <sourceNavigationalProperty>
+            <associationDefinesSourceProperty Id="152b3392-6487-41c9-b83e-179d779751d8">
+              <NavigationalPropertyMoniker name="/POSModel/PenjualanDet/Penjualan" />
+            </associationDefinesSourceProperty>
+          </sourceNavigationalProperty>
+        </Association>
+      </AssociationTargets>
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="254718d2-da34-4000-98cc-d59dc2dd3c82">
+          <NavigationalProperty Id="62cb526f-69dc-4c6d-8117-2d1abc56d022" name="Penjualan" type="Penjualan" label="Penjualan : Penjualan" nullable="true" kind="Persistent" fieldName="_penjualan" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+    <DomainClass Id="e6870506-0d8e-422a-ae00-69c4db99c802" name="Penjualan" namespace="EntitiesModel" showPropertiesCompartment="true" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="5d0ee39c-c601-47f6-8e58-0d36c83d8d8a" name="KdFakturPenj" label="KdFakturPenj : String" kind="Persistent" identity="true" fieldName="_kdFakturPenj" />
+      <Property Id="007c5eb7-5b64-4752-8ac2-86a6dba9907b" name="FormName" label="FormName : String" kind="Persistent" fieldName="_formName" />
+      <Property Id="6c7d1d1e-45c7-4ca4-8d06-fe222ef174e9" name="IsStatus" type="Boolean" label="IsStatus : Boolean" kind="Persistent" fieldName="_isStatus" />
+      <Property Id="04714fc2-6de3-4095-9844-decf9f068089" name="Jam" type="DateTime" label="Jam : DateTime" kind="Persistent" fieldName="_jam" />
+      <Property Id="7bc5400a-f3d0-4631-bc84-43a169c53c2f" name="TglInput" type="DateTime" label="TglInput : DateTime" kind="Persistent" fieldName="_tglInput" />
+      <Property Id="7921e65b-3004-4e65-a162-1e5105cafdaf" name="TglJual" type="DateTime" label="TglJual : DateTime" kind="Persistent" fieldName="_tglJual" />
+      <Property Id="9e660342-ef17-404f-9996-a322d675ace0" name="TglUpdate" type="DateTime" label="TglUpdate : DateTime" kind="Persistent" fieldName="_tglUpdate" />
+      <Property Id="d7d0ab31-b842-40e2-b28c-391fbfefbf7a" name="TotalBayar" type="Decimal" label="TotalBayar : Decimal" kind="Persistent" fieldName="_totalBayar" />
+      <Property Id="7b09cff6-8e14-496c-a339-7d8656d27950" name="UserName" label="UserName : String" kind="Persistent" fieldName="_userName" />
+      <Property Id="882247f2-b974-40ba-a7bb-b976d6ab3619" name="Customer" label="Customer : String" kind="Persistent" fieldName="_customer" />
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="b3e0846c-65b0-42ee-bc53-06f3e0b82264">
+          <NavigationalProperty Id="2f3c677d-617e-431e-b52c-f4a1248633bc" name="PenjualanDets" type="IList&lt;PenjualanDet&gt;" label="PenjualanDets : IList&lt;PenjualanDet&gt;" nullable="true" kind="Persistent" fieldName="_penjualanDets" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+    <DomainClass Id="860d13f7-ccf9-4b67-a245-f3287cc7dba6" name="Pelanggan" namespace="EntitiesModel" showPropertiesCompartment="true" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="8ffa1770-61ea-4084-914d-586342236424" name="Kdplgn" label="Kdplgn : String" kind="Persistent" identity="true" fieldName="_kdplgn" />
+      <Property Id="8e18ed41-ff57-4043-a79d-8c0413bd1231" name="Almtplgn" label="Almtplgn : String" kind="Persistent" fieldName="_almtplgn" />
+      <Property Id="399d84c6-1786-480f-b07e-ce0d1c0bd38d" name="Faxplgn" label="Faxplgn : String" kind="Persistent" fieldName="_faxplgn" />
+      <Property Id="d46384fa-f9b8-4076-90f6-0bb070f349e3" name="FormName" label="FormName : String" kind="Persistent" fieldName="_formName" />
+      <Property Id="42d6ad47-fc79-41ba-954b-77d5e1afad93" name="Hpplgn" label="Hpplgn : String" kind="Persistent" fieldName="_hpplgn" />
+      <Property Id="f9e1613c-e0ba-4963-b63e-3b955667c2bd" name="IsStatus" type="Boolean" label="IsStatus : Boolean" kind="Persistent" fieldName="_isStatus" />
+      <Property Id="c2eb0f45-1f78-433f-90ea-44a107ae095a" name="Kotaplgn" label="Kotaplgn : String" kind="Persistent" fieldName="_kotaplgn" />
+      <Property Id="c2d3f4a0-26a6-46c3-88dc-31e7ea0eb223" name="Nmplgn" label="Nmplgn : String" kind="Persistent" fieldName="_nmplgn" />
+      <Property Id="28850f58-8aff-4aa1-9d92-335eeff0a33c" name="Telpplgn" label="Telpplgn : String" kind="Persistent" fieldName="_telpplgn" />
+      <Property Id="b4539f2b-354f-47bf-8825-f01458ef0bea" name="TglInput" type="DateTime" label="TglInput : DateTime" kind="Persistent" fieldName="_tglInput" />
+      <Property Id="4ec8712b-e1c3-4279-af5b-1217619b3fb6" name="TglUpdate" type="DateTime" label="TglUpdate : DateTime" kind="Persistent" fieldName="_tglUpdate" />
+      <Property Id="d127ba74-757c-48d0-b2cc-6974b95baf27" name="UserName" label="UserName : String" kind="Persistent" fieldName="_userName" />
+    </DomainClass>
+    <DomainClass Id="ab9297a8-17ba-4d74-ad04-b7a50bc83d53" name="Kategori" namespace="EntitiesModel" showPropertiesCompartment="true" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="e3c60d9b-59bc-4a5f-8e18-65dd449b4af5" name="KdKategori" label="KdKategori : String" kind="Persistent" identity="true" fieldName="_kdKategori" />
+      <Property Id="20529126-3442-4a54-9630-b3576f15b065" name="FormName" label="FormName : String" kind="Persistent" fieldName="_formName" />
+      <Property Id="27ebd738-7687-459a-94fb-44e5c548c0ef" name="IsStatus" type="Boolean" label="IsStatus : Boolean" nullable="true" kind="Persistent" fieldName="_isStatus" />
+      <Property Id="b7fc01f1-833e-4b1a-942a-18e0c4ac298e" name="Nama" label="Nama : String" kind="Persistent" fieldName="_nama" />
+      <Property Id="7bccdc88-1174-4f5c-a893-7e8a7d05e655" name="TglInput" type="DateTime" label="TglInput : DateTime" nullable="true" kind="Persistent" fieldName="_tglInput" />
+      <Property Id="dc7421eb-e808-48f9-8a25-29573f09029e" name="TglUpdate" type="DateTime" label="TglUpdate : DateTime" nullable="true" kind="Persistent" fieldName="_tglUpdate" />
+      <Property Id="2783fa87-f988-4dc8-87c8-bba451abd057" name="UserName" label="UserName : String" kind="Persistent" fieldName="_userName" />
+    </DomainClass>
+    <DomainClass Id="bd36b4a0-29d5-4777-b085-3051ac21e6a8" name="Biaya" namespace="EntitiesModel" showPropertiesCompartment="true" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="5c0923db-7779-44df-a250-ea1fa48f6381" name="NoBiaya" label="NoBiaya : String" kind="Persistent" identity="true" fieldName="_noBiaya" />
+      <Property Id="68f7debd-5c7f-4b9b-9f08-1c8c695d118f" name="FormName" label="FormName : String" kind="Persistent" fieldName="_formName" />
+      <Property Id="2f1d5011-39db-4599-a8a0-033b721b10b4" name="IsStatus" type="Boolean" label="IsStatus : Boolean" nullable="true" kind="Persistent" fieldName="_isStatus" />
+      <Property Id="88e3cdf3-f9ce-46fd-b110-1e07981cdfda" name="Jumlah" type="Decimal" label="Jumlah : Decimal" nullable="true" kind="Persistent" fieldName="_jumlah" />
+      <Property Id="7c21e015-6adf-47b1-9c4c-7be2e116b174" name="Keterangan" label="Keterangan : String" kind="Persistent" fieldName="_keterangan" />
+      <Property Id="09e607ba-83f0-43a7-9791-0b095ae36e8b" name="Nama" label="Nama : String" kind="Persistent" fieldName="_nama" />
+      <Property Id="7921daeb-e8b7-41f8-8428-885f7ab86dae" name="Tgl" type="DateTime" label="Tgl : DateTime" nullable="true" kind="Persistent" fieldName="_tgl" />
+      <Property Id="232f0f2d-46de-49a7-9863-7981758f53b4" name="TglInput" type="DateTime" label="TglInput : DateTime" nullable="true" kind="Persistent" fieldName="_tglInput" />
+      <Property Id="ea982179-8de9-4132-85d5-0dd2ca7ebe66" name="TglUpdate" type="DateTime" label="TglUpdate : DateTime" nullable="true" kind="Persistent" fieldName="_tglUpdate" />
+      <Property Id="3dc10eca-ec6f-4d59-9fb2-1b5058e04033" name="UserName" label="UserName : String" kind="Persistent" fieldName="_userName" />
+    </DomainClass>
+    <DomainClass Id="17c22cf2-a08a-433c-b1d4-a64ccb184a8c" name="Barang" namespace="EntitiesModel" showPropertiesCompartment="true" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="2bc90a99-240a-42d1-9beb-dd53b74f827b" name="KdBarang" label="KdBarang : String" kind="Persistent" identity="true" fieldName="_kdBarang" />
+      <Property Id="14fd602c-e745-4154-b658-c7f316bd8aaa" name="FormName" label="FormName : String" kind="Persistent" fieldName="_formName" />
+      <Property Id="d5d17264-51cd-4b80-bcfd-c74609630526" name="IsStatus" type="Boolean" label="IsStatus : Boolean" kind="Persistent" fieldName="_isStatus" />
+      <Property Id="ff4b2c43-960a-4f4c-ba4e-b766480b769f" name="KdKategori" label="KdKategori : String" kind="Persistent" fieldName="_kdKategori" />
+      <Property Id="b5aa4cbd-e36e-4225-ba6e-50fc8dcf75e9" name="Lokasi" label="Lokasi : String" kind="Persistent" fieldName="_lokasi" />
+      <Property Id="153ca385-ea3d-4f5b-83fe-7ea58090b686" name="Nama" label="Nama : String" kind="Persistent" fieldName="_nama" />
+      <Property Id="ac4b1fc8-1cb7-432e-9dc0-72fb5a917c93" name="TglInput" type="DateTime" label="TglInput : DateTime" kind="Persistent" fieldName="_tglInput" />
+      <Property Id="4ce8196b-c0f3-4e5e-bebc-46a5595d4cf5" name="TglUpdate" type="DateTime" label="TglUpdate : DateTime" kind="Persistent" fieldName="_tglUpdate" />
+      <Property Id="12b5f3d1-e6a4-429c-9b22-4eccfdfdf630" name="UserName" label="UserName : String" kind="Persistent" fieldName="_userName" />
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="77da8eab-c492-4e74-854c-7a5e23894f68">
+          <NavigationalProperty Id="d5b1ecbe-1fcb-4c33-b729-2bb583483620" name="SatuanDets" type="IList&lt;SatuanDet&gt;" label="SatuanDets : IList&lt;SatuanDet&gt;" nullable="true" kind="Persistent" fieldName="_satuanDets" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+    <DomainClass Id="a256846c-f627-4d74-819f-ea0ca2578cec" name="Vw_laporanPenjualan" namespace="EntitiesModel" showPropertiesCompartment="true" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="6646cb2a-24ad-4ee8-ab9d-98f314f854b9" name="HargaJual" type="Decimal" label="HargaJual : Decimal" nullable="true" kind="Persistent" fieldName="_hargaJual" />
+      <Property Id="3ba3c789-13ee-4a0e-aa47-dd87739ab2c6" name="KdFakturPenj" label="KdFakturPenj : String" kind="Persistent" fieldName="_kdFakturPenj" />
+      <Property Id="1f2af00e-c7fc-4650-b7c4-3a747d7a5c38" name="Kdsatuan" label="Kdsatuan : String" kind="Persistent" fieldName="_kdsatuan" />
+      <Property Id="69f3972c-c00d-4029-8bc3-bd10e397b5cb" name="Laba" type="Decimal" label="Laba : Decimal" nullable="true" kind="Persistent" fieldName="_laba" />
+      <Property Id="612504c0-86d1-4250-8081-a98a4d5f5774" name="Nama" label="Nama : String" kind="Persistent" fieldName="_nama" />
+      <Property Id="30e538da-52d2-4fcd-b337-27b4bef6fecd" name="Qty" type="Int32" label="Qty : Int32" nullable="true" kind="Persistent" fieldName="_qty" />
+      <Property Id="f334a96d-c75a-449e-9d18-59b004a8dd5c" name="TglJual" type="DateTime" label="TglJual : DateTime" kind="Persistent" fieldName="_tglJual" />
+      <Property Id="ae8fcc31-9419-44b0-a7f2-bc1e2829ae8e" name="Total" type="Decimal" label="Total : Decimal" nullable="true" kind="Persistent" fieldName="_total" />
+      <Property Id="5f6d82ab-4ea2-4a22-b027-2e28a3f2fa47" name="UserName" label="UserName : String" kind="Persistent" fieldName="_userName" />
+      <Property Id="a3e1c2e1-3ad7-42fc-8128-25d2003628bd" name="Customer" label="Customer : String" kind="Persistent" fieldName="_customer" />
+    </DomainClass>
+    <DomainClass Id="df50e5d7-c2b5-4b09-a41a-2d8cae758308" name="AuditTrailDet" namespace="EntitiesModel" showPropertiesCompartment="true" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="3f057b41-6f1f-47f1-b257-a5750bee1aa7" name="Field" label="Field : String" kind="Persistent" identity="true" fieldName="_field" />
+      <Property Id="fa848ca5-5fbc-450b-82ee-a859219d15a5" name="KdAudit" type="Int32" label="KdAudit : Int32" kind="Persistent" identity="true" fieldName="_kdAudit" />
+      <Property Id="0bfaceb7-b118-4069-99d6-9c95966a9d55" name="NewValue" label="NewValue : String" kind="Persistent" fieldName="_newValue" />
+      <Property Id="1c28eabd-48aa-4cd6-bbb5-6976253f0518" name="OldValue" label="OldValue : String" kind="Persistent" fieldName="_oldValue" />
+      <Property Id="af3fac58-83d6-4413-9396-30372dadc84b" name="OldValues" label="OldValues : String" kind="Persistent" fieldName="_oldValues" />
+      <Property Id="048b545c-4fad-4040-afb2-7bfcbd99b4ab" name="NewValues" label="NewValues : String" kind="Persistent" fieldName="_newValues" />
+      <Property Id="ada89b85-9b1c-4de9-8de3-41d66ee78046" name="Fields" label="Fields : String" kind="Persistent" identity="true" fieldName="_fields" />
+      <AssociationTargets>
+        <Association Id="29cf14f1-293d-4d6b-bcd9-c88d3fa96901" SourceMultiplicity="One" name="AuditTrailDetHasAuditTrail">
+          <DomainClassMoniker name="/POSModel/AuditTrail" />
+          <targetNavigationalProperty>
+            <associationDefinesTargetProperty Id="c10b63cd-c3c8-4791-a799-0b0231cf8999">
+              <NavigationalPropertyMoniker name="/POSModel/AuditTrail/AuditTrailDets" />
+            </associationDefinesTargetProperty>
+          </targetNavigationalProperty>
+          <sourceNavigationalProperty>
+            <associationDefinesSourceProperty Id="a0666621-3d8e-435d-9356-9b058aad4346">
+              <NavigationalPropertyMoniker name="/POSModel/AuditTrailDet/AuditTrail" />
+            </associationDefinesSourceProperty>
+          </sourceNavigationalProperty>
+        </Association>
+      </AssociationTargets>
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="e57c3985-c761-4fc0-8ba8-e7111fcc329f">
+          <NavigationalProperty Id="1a813f7b-a942-4030-9adb-753724c6e95d" name="AuditTrail" type="AuditTrail" label="AuditTrail : AuditTrail" nullable="true" kind="Persistent" fieldName="_auditTrail" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+    <DomainClass Id="f9812e77-3b0e-4b27-b3ed-f10e423b42b1" name="AuditTrail" namespace="EntitiesModel" showPropertiesCompartment="true" identityMechanism="DatabaseServerCalculated" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="d60bc2ed-a34b-4095-8f19-5960946ab6f1" name="KdAuditTrail" type="Int32" label="KdAuditTrail : Int32" kind="Persistent" identity="true" fieldName="_kdAuditTrail" />
+      <Property Id="16b5bd0b-be53-4c13-ae5f-b6a2fc225570" name="TglInput" type="DateTime" label="TglInput : DateTime" kind="Persistent" fieldName="_tglInput" />
+      <Property Id="2da58ddd-6e15-4c7c-abd6-3fd5e8091ef5" name="Username" label="Username : String" kind="Persistent" fieldName="_username" />
+      <Property Id="9234a3b6-5b14-41f3-8b3c-c69011889ee6" name="Operations" label="Operations : String" kind="Persistent" fieldName="_operations" />
+      <Property Id="faba90e7-21b0-47d9-a2f5-a678edab3af6" name="Modules" label="Modules : String" kind="Persistent" fieldName="_modules" />
+      <Property Id="a24f0cc4-37de-41e1-808a-23d6535005da" name="Hosts" label="Hosts : String" kind="Persistent" fieldName="_hosts" />
+      <Property Id="18237bda-703d-4b34-ac62-fe9911b6f1c6" name="Actions" label="Actions : String" kind="Persistent" fieldName="_actions" />
+      <navigationalProperties>
+        <classHasNavigationalProperties Id="bdda85e5-730a-49da-bd2b-3cec9cc793fd">
+          <NavigationalProperty Id="321f38b3-54fd-4835-a073-52db062d909a" name="AuditTrailDets" type="IList&lt;AuditTrailDet&gt;" label="AuditTrailDets : IList&lt;AuditTrailDet&gt;" nullable="true" kind="Persistent" fieldName="_auditTrailDets" isDependent="false" isManaged="false" />
+        </classHasNavigationalProperties>
+      </navigationalProperties>
+    </DomainClass>
+    <DomainClass Id="ef92ae10-de9a-4639-9e20-23b681a17227" name="HostReg" namespace="EntitiesModel" showPropertiesCompartment="true" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="9b7978fd-e74c-4239-a43b-9c87897917ae" name="DateReg" label="DateReg : String" kind="Persistent" fieldName="_dateReg" />
+      <Property Id="d39249a9-859d-48a8-be21-69a8ea5f613d" name="DescReg" label="DescReg : String" kind="Persistent" fieldName="_descReg" />
+      <Property Id="d3d654ae-1e43-4ad3-b598-63bbb1ab64a8" name="HostName" label="HostName : String" kind="Persistent" identity="true" fieldName="_hostName" />
+      <Property Id="9c3627f4-0ed9-4b22-9869-54ddcffc2ae5" name="IsStatus" type="Boolean" label="IsStatus : Boolean" nullable="true" kind="Persistent" fieldName="_isStatus" />
+    </DomainClass>
+    <DomainClass Id="a793e1ac-a42e-45d4-a782-7c2710002421" name="Vw_LaporanBarang" namespace="EntitiesModel" showPropertiesCompartment="true" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="451a67eb-59c7-48f5-8230-30e4778a8bdc" name="HargaBeli" type="Decimal" label="HargaBeli : Decimal" nullable="true" kind="Persistent" fieldName="_hargaBeli" />
+      <Property Id="91e5edc8-dd60-4b5b-85d7-eeb72cbd5d3b" name="HargaJual" type="Decimal" label="HargaJual : Decimal" nullable="true" kind="Persistent" fieldName="_hargaJual" />
+      <Property Id="cf28d165-4197-4723-a75f-538894c1fa4d" name="KdKategori" label="KdKategori : String" kind="Persistent" fieldName="_kdKategori" />
+      <Property Id="d2a6a01e-7a1f-4216-940b-68ec656d88b8" name="KdSatuan" label="KdSatuan : String" kind="Persistent" identity="true" fieldName="_kdSatuan" />
+      <Property Id="ebd6ae4c-2c7a-4fce-b56b-8f2620c9b171" name="Lokasi" label="Lokasi : String" kind="Persistent" fieldName="_lokasi" />
+      <Property Id="ad15cd7d-fc78-4f10-8d7e-127e2ccd2915" name="Nama" label="Nama : String" kind="Persistent" fieldName="_nama" />
+      <Property Id="7d556837-93f0-4d69-85dc-c893e5c53a82" name="Par" type="Int32" label="Par : Int32" nullable="true" kind="Persistent" fieldName="_par" />
+      <Property Id="467e078a-274b-4c5e-bdc3-15b1f96f43b7" name="KdBarang" label="KdBarang : String" kind="Persistent" identity="true" fieldName="_kdBarang" />
+    </DomainClass>
+    <DomainClass Id="5a5ec7c4-c202-4f83-8696-7ff5564f73e1" name="T_Setting" namespace="EntitiesModel" showPropertiesCompartment="true" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="07351b3d-1299-420f-aa3e-bb1751f6ce25" name="Tname" label="Tname : String" kind="Persistent" identity="true" fieldName="_tname" />
+      <Property Id="4f387605-9839-4aa6-9242-506a876d7a38" name="TValue" label="TValue : String" kind="Persistent" fieldName="_tValue" />
+    </DomainClass>
+    <DomainClass Id="ada0284e-cdf0-4314-9677-b95c3c366b8c" name="ErrorLog" namespace="EntitiesModel" showPropertiesCompartment="true" identityMechanism="DatabaseServerCalculated" showNavigationCompartment="true" showImplementationCompartment="true">
+      <Property Id="008e319f-d993-453b-956f-fffbb65e588b" name="ID" type="Int32" label="ID : Int32" kind="Persistent" identity="true" fieldName="_iD" />
+      <Property Id="3fc6c192-9264-44d9-bda8-4b7c3e609ec2" name="ErrorText" label="ErrorText : String" kind="Persistent" fieldName="_errorText" />
+      <Property Id="0e3d50fd-bae5-474c-a7e5-3b8371ac38cf" name="FormName" label="FormName : String" kind="Persistent" fieldName="_formName" />
+      <Property Id="431dceec-4a89-4c41-8cc8-2f99b1ab3e48" name="HostName" label="HostName : String" kind="Persistent" fieldName="_hostName" />
+      <Property Id="59b98f61-0ded-41c5-bc70-3d3daade4758" name="ModulName" label="ModulName : String" kind="Persistent" fieldName="_modulName" />
+      <Property Id="61c2a2eb-1321-41b0-89bf-9c8771bcb6fc" name="QueryText" label="QueryText : String" kind="Persistent" fieldName="_queryText" />
+    </DomainClass>
+  </Types>
+  <domainContext>
+    <domainModelHasDomainContext Id="21f0963f-c605-46c4-b891-91279ab351c4">
+      <domainContainer name="POSModel" namespace="EntitiesModel" showPropertiesCompartment="true">
+        <entitySetProperty name="T_Users" namespace="EntitiesModel" type="T_User" label="T_Users : IQueryable&lt;EntitiesModel.T_User&gt;" />
+        <entitySetProperty name="T_Owners" namespace="EntitiesModel" type="T_Owner" label="T_Owners : IQueryable&lt;EntitiesModel.T_Owner&gt;" />
+        <entitySetProperty name="Suppliers" namespace="EntitiesModel" type="Supplier" label="Suppliers : IQueryable&lt;EntitiesModel.Supplier&gt;" />
+        <entitySetProperty name="SatuanDets" namespace="EntitiesModel" type="SatuanDet" label="SatuanDets : IQueryable&lt;EntitiesModel.SatuanDet&gt;" />
+        <entitySetProperty name="Satuans" namespace="EntitiesModel" type="Satuan" label="Satuans : IQueryable&lt;EntitiesModel.Satuan&gt;" />
+        <entitySetProperty name="PenjualanDets" namespace="EntitiesModel" type="PenjualanDet" label="PenjualanDets : IQueryable&lt;EntitiesModel.PenjualanDet&gt;" />
+        <entitySetProperty name="Penjualans" namespace="EntitiesModel" type="Penjualan" label="Penjualans : IQueryable&lt;EntitiesModel.Penjualan&gt;" />
+        <entitySetProperty name="Pelanggans" namespace="EntitiesModel" type="Pelanggan" label="Pelanggans : IQueryable&lt;EntitiesModel.Pelanggan&gt;" />
+        <entitySetProperty name="Kategoris" namespace="EntitiesModel" type="Kategori" label="Kategoris : IQueryable&lt;EntitiesModel.Kategori&gt;" />
+        <entitySetProperty name="Biayas" namespace="EntitiesModel" type="Biaya" label="Biayas : IQueryable&lt;EntitiesModel.Biaya&gt;" />
+        <entitySetProperty name="Barangs" namespace="EntitiesModel" type="Barang" label="Barangs : IQueryable&lt;EntitiesModel.Barang&gt;" />
+        <entitySetProperty name="Vw_laporanPenjualans" namespace="EntitiesModel" type="Vw_laporanPenjualan" label="Vw_laporanPenjualans : IQueryable&lt;EntitiesModel.Vw_laporanPenjualan&gt;" />
+        <entitySetProperty name="AuditTrailDets" namespace="EntitiesModel" type="AuditTrailDet" label="AuditTrailDets : IQueryable&lt;EntitiesModel.AuditTrailDet&gt;" />
+        <entitySetProperty name="AuditTrails" namespace="EntitiesModel" type="AuditTrail" label="AuditTrails : IQueryable&lt;EntitiesModel.AuditTrail&gt;" />
+        <entitySetProperty name="HostRegs" namespace="EntitiesModel" type="HostReg" label="HostRegs : IQueryable&lt;EntitiesModel.HostReg&gt;" />
+        <entitySetProperty name="Vw_LaporanBarangs" namespace="EntitiesModel" type="Vw_LaporanBarang" label="Vw_LaporanBarangs : IQueryable&lt;EntitiesModel.Vw_LaporanBarang&gt;" />
+        <entitySetProperty name="T_Settings" namespace="EntitiesModel" type="T_Setting" label="T_Settings : IQueryable&lt;EntitiesModel.T_Setting&gt;" />
+        <entitySetProperty name="ErrorLogs" namespace="EntitiesModel" type="ErrorLog" label="ErrorLogs : IQueryable&lt;EntitiesModel.ErrorLog&gt;" />
+      </domainContainer>
+    </domainModelHasDomainContext>
+  </domainContext>
+</DomainModel>
